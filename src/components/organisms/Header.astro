@@ -1,0 +1,54 @@
+---
+---
+
+<header>
+  <div class="wrapper">
+    <a href="/" class="logo">e.</a>
+
+    <nav>
+      <a href="/blog">blog</a>
+      <a href="/projects">projects</a>
+    </nav>
+  </div>
+</header>
+
+<style>
+  header {
+    height: 60px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: var(--backgroundColor);
+    border-bottom: 1px solid var(--borderColor);
+  }
+
+  .wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    margin: 0 auto;
+    width: 100%;
+    max-width: var(--pageWidth);
+    height: 100%;
+  }
+
+  a {
+    text-decoration: none;
+    color: var(--textColor);
+  }
+
+  .logo {
+    font-size: 2rem;
+  }
+
+  nav {
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  
+</style>
