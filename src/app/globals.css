@@ -5,8 +5,8 @@
   --accent: #dd2d44;
   --text: #333333;
   --headerHeight: 58px;
-    --borderColor: ;
-    --borderColor: #e6e6e6;
+  --borderColor: ;
+  --borderColor: #e6e6e6;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -42,6 +42,7 @@ body {
 
 a {
   text-decoration: none;
+  color: var(--text);
 }
 
 h1,
@@ -92,15 +93,6 @@ header > nav > a {
   &:hover {
     color: var(--accent);
   }
-}
-
-main {
-  display: flex;
-  flex-direction: column;
-  width: 100vw;
-  max-width: 1000px;
-  margin: var(--headerHeight) auto 0;
-  padding: 0 15px 50px;
 }
 
 @media (prefers-color-scheme: dark) {
