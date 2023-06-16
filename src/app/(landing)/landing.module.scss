@@ -1,9 +1,23 @@
-.name {
-    font-size: 2.5rem;
-    margin-top: 50px;
-    font-weight: 300;
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    max-width: 1200px;
+    margin: var(--headerHeight) auto 0;
+    padding: 20px 15px 50px;
 
-    span {
-        font-weight: bold;
+    .name {
+        font-size: 2.5rem;
+        margin-top: 50px;
+        font-weight: 300;
+
+        span {
+            font-weight: bold;
+        }
+    }
+
+    .headliner {
+        margin-top: 10px;
+        font-size: 1.2rem;
     }
 }

@@ -4,6 +4,7 @@ import './globals.css';
 export const metadata = {
   title: 'Estefan Hu',
   description: 'Software Engineer',
+  keywords: ['estefan', 'hu', 'dingus'],
 };
 
 export default function RootLayout({
@@ -40,7 +41,7 @@ export default function RootLayout({
           </nav>
         </header>
 
-        <main>{children}</main>
+        {children}
       </body>
     </html>
   );
