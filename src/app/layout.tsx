@@ -20,10 +20,23 @@ export default function RootLayout({
           </Link>
 
           <nav>
-            <Link href="/b">blg</Link>
-            <Link href="/rsm">rsm</Link>
-            <Link href="/p">prjkts</Link>
-            <Link href="https://github.com/estefanhu/">gthb</Link>
+            <Link href="/stry">stry</Link>
+            <Link href="/blg">blg</Link>
+            <Link href="/prjkts">prjkts</Link>
+            <Link
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://www.linkedin.com/in/estefanhu/"
+            >
+              lnkdn
+            </Link>
+            <Link
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://github.com/estefanhu/"
+            >
+              gthb
+            </Link>
           </nav>
         </header>
 

@@ -2,10 +2,11 @@
   --max-width: 1100px;
   --border-radius: 6px;
   --layout: #ffffff;
-  --accent: #e7576d;
-  --accentSecondary: #f4abba;
+  --accent: #dd2d44;
   --text: #333333;
   --headerHeight: 58px;
+    --borderColor: ;
+    --borderColor: #e6e6e6;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -14,9 +15,9 @@
     --backgroundAccent: #292929;
     --background: #1e1e1e;
     --layout: #181818;
-    --text: #d4d4d4;
-    --accent: #f4abba;
-    --accentSecondary: #e7576d;
+    --text: #f3f3f3;
+    --accent: #dd2d44;
+    --borderColor: #181818;
   }
 }
 
@@ -58,7 +59,7 @@ header {
   align-items: center;
   justify-content: space-between;
   padding: 0 30px;
-  border-bottom: 1px solid #e6e6e6;
+  border-bottom: 1px solid var(--borderColor);
   position: fixed;
   top: 0;
 }
@@ -78,7 +79,7 @@ header > nav {
   align-items: center;
   justify-content: space-around;
   height: 100%;
-  width: 250px;
+  width: 260px;
 }
 
 header > nav > a {
