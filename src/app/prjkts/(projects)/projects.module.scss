@@ -1,5 +1,23 @@
 .section {
-    margin-bottom: 50px;
+    margin-bottom: 40px;
+
+    h1 {
+        font-size: 5rem;
+        font-weight: bold;
+        margin-bottom: 15px;
+
+        @media screen and (max-width: 500px) {
+            font-size: 3rem;
+        }
+    }
+
+    .description {
+        line-height: 25px;
+
+        @media screen and (max-width: 500px) {
+            line-height: 20px;
+        }
+    }
 
     .header {
         display: flex;
@@ -31,6 +49,7 @@
         }
     }
 
-    .card {
+    .idea {
+        margin-bottom: 20px;
     }
 }
