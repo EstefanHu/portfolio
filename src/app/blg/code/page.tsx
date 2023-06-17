@@ -1,3 +1,3 @@
 export default function Page() {
-  return <h1>health page</h1>;
+  return <h1>software page</h1>;
 }

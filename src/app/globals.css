@@ -31,8 +31,8 @@
   -moz-box-sizing: border-box;
   font: inherit;
   vertical-align: baseline;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans,
+    Helvetica Neue, sans-serif;
 }
 
 body {
@@ -80,7 +80,7 @@ header > nav {
   align-items: center;
   justify-content: space-around;
   height: 100%;
-  width: 260px;
+  width: 220px;
 }
 
 header > nav > a {

@@ -1,23 +1,23 @@
 .wrapper {
-    display: flex;
-    flex-direction: column;
-    width: 100vw;
-    max-width: 1200px;
-    margin: var(--headerHeight) auto 0;
-    padding: 20px 15px 50px;
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  max-width: 1200px;
+  margin: var(--headerHeight) auto 0;
+  padding: 20px 15px 50px;
 
-    .name {
-        font-size: 2.5rem;
-        margin-top: 50px;
-        font-weight: 300;
+  .name {
+    font-size: 2.5rem;
+    margin-top: 50px;
+    font-weight: 300;
 
-        span {
-            font-weight: bold;
-        }
+    span {
+      font-weight: bold;
     }
+  }
 
-    .headliner {
-        margin-top: 10px;
-        font-size: 1.2rem;
-    }
+  .headliner {
+    margin-top: 10px;
+    font-size: 1.2rem;
+  }
 }

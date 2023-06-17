@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import './globals.css';
+import PageLinks from '@/components/PageLinks';
 
 export const metadata = {
   title: 'Estefan Hu',
@@ -7,35 +8,23 @@ export const metadata = {
   keywords: ['estefan', 'hu', 'dingus'],
 };
 
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode;
-}) {
+export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en">
+    <html lang='en'>
       <body>
         <header>
-          <Link href="/">
+          <Link href='/'>
             <h1>E</h1>
           </Link>
 
           <nav>
-            <Link href="/stry">stry</Link>
-            <Link href="/blg">blg</Link>
-            <Link href="/prjkts">prjkts</Link>
-            <Link
-              target="_blank"
-              rel="noopener noreferrer"
-              href="https://www.linkedin.com/in/estefanhu/"
-            >
+            <PageLinks />
+
+            <Link target='_blank' rel='noopener noreferrer' href='https://www.linkedin.com/in/estefanhu/'>
               lnkdn
             </Link>
-            <Link
-              target="_blank"
-              rel="noopener noreferrer"
-              href="https://github.com/estefanhu/"
-            >
+
+            <Link target='_blank' rel='noopener noreferrer' href='https://github.com/estefanhu/'>
               gthb
             </Link>
           </nav>
