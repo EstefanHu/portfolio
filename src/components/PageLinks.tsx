@@ -4,6 +4,7 @@ import Link from 'next/link';
 
 const SELECTED = {
   color: '#dd2d44',
+  textDecoration: 'underline',
 };
 
 export default function PageLinks() {
