@@ -1,2 +1,36 @@
-.wrapper {
+.section {
+    margin-bottom: 50px;
+
+    .header {
+        display: flex;
+        align-items: baseline;
+        justify-content: space-between;
+        border-bottom: 1px solid var(--borderColor);
+        margin-bottom: 15px;
+        padding-bottom: 5px;
+
+        h2 {
+            font-size: 1.5rem;
+            font-weight: bold;
+            text-transform: capitalize;
+            margin-right: 15px;
+        }
+
+        p {
+            font-size: 0.8rem;
+        }
+
+        @media screen and (max-width: 400px) {
+            flex-direction: column;
+            padding-bottom: 8px;
+
+            h2 {
+                margin-bottom: 5px;
+                font-size: 1.25rem;
+            }
+        }
+    }
+
+    .card {
+    }
 }
