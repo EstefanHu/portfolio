@@ -1,6 +1,7 @@
 'use client';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
+import { FaStarOfLife } from 'react-icons/fa';
 
 const SELECTED = {
   color: '#dd2d44',
@@ -14,19 +15,23 @@ export default function BlogNavigation() {
   return (
     <>
       <Link style={!selected ? SELECTED : {}} href='/blg'>
-        b<span>log</span>
+        <FaStarOfLife size='20px' />
       </Link>
-      <Link style={selected === 'urban' ? SELECTED : {}} href='/blg/urban'>
-        u<span>rban</span>
+
+      <Link style={selected === 'algo' ? SELECTED : {}} href='/blg/algo'>
+        a<span>lgo</span>
       </Link>
-      <Link style={selected === 'software' ? SELECTED : {}} href='/blg/software'>
-        s<span>oftware</span>
+
+      <Link style={selected === 'code' ? SELECTED : {}} href='/blg/code'>
+        c<span>ode</span>
       </Link>
-      <Link style={selected === 'algorithm' ? SELECTED : {}} href='/blg/algorithm'>
-        a<span>lgorithm</span>
-      </Link>
+
       <Link style={selected === 'health' ? SELECTED : {}} href='/blg/health'>
         h<span>ealth</span>
+      </Link>
+
+      <Link style={selected === 'urban' ? SELECTED : {}} href='/blg/urban'>
+        u<span>rban</span>
       </Link>
     </>
   );
