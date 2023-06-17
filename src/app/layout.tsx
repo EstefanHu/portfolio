@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import './globals.css';
+import PageLinks from '@/components/PageLinks';
 
 export const metadata = {
   title: 'Estefan Hu',
@@ -16,7 +17,17 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             <h1>E</h1>
           </Link>
 
-          <nav></nav>
+          <nav>
+            <PageLinks />
+
+            <Link target='_blank' rel='noopener noreferrer' href='https://www.linkedin.com/in/estefanhu/'>
+              lnkdn
+            </Link>
+
+            <Link target='_blank' rel='noopener noreferrer' href='https://github.com/estefanhu/'>
+              gthb
+            </Link>
+          </nav>
         </header>
 
         {children}
