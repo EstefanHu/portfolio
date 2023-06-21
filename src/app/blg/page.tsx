@@ -1,5 +1,4 @@
-import Link from 'next/link';
-import styles from './posts.module.scss';
+import styles from './blg.module.scss';
 
 export default function Posts() {
   return (

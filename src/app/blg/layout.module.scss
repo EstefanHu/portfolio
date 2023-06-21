@@ -51,4 +51,14 @@
       }
     }
   }
+
+  @media screen and (max-width: 500px) {
+    nav {
+      width: 35px;
+
+      a {
+        font-size: 2rem;
+      }
+    }
+  }
 }

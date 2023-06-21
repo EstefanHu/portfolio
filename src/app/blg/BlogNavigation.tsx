@@ -10,7 +10,6 @@ const SELECTED = {
 
 export default function BlogNavigation() {
   const pathname = usePathname();
-  console.log(pathname);
   const selected = pathname.split('c=')[1];
 
   return (
