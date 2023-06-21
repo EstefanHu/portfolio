@@ -20,5 +20,28 @@
   .headliner {
     margin-top: 10px;
     font-size: 1.2rem;
+    margin-bottom: 40vh;
+  }
+
+  section {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+    h2 {
+      font-size: 1.25rem;
+      font-weight: bold;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin-bottom: 10px;
+    }
+
+    article {
+      margin-bottom: 20px;
+
+      h3 {
+        font-size: 2rem;
+      }
+    }
   }
 }

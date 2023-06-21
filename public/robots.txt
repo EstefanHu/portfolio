@@ -1,9 +1,0 @@
-User-agent: BLEXBot
-Disallow: /
-
-User-agent: Twitterbot
-Disallow:
-
-User-agent: *
-
-SITEMAP: https://estefan.me/sitemap.xml
