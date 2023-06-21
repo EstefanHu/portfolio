@@ -1,14 +1,10 @@
-import styles from './layout.module.scss';
-import BlogNavigation from './BlogNavigation';
+const STYLES = {
+  display: 'flex',
+  width: '100vw',
+  maxWidth: '1000px',
+  margin: '60px auto 0',
+};
 
 export default function BlgLayout({ children }: { children: React.ReactNode }) {
-  return (
-    <main className={styles.wrapper}>
-      <nav>
-        <BlogNavigation />
-      </nav>
-
-      <div className={styles.feed}>{children}</div>
-    </main>
-  );
+  return <main style={STYLES}>{children}</main>;
 }

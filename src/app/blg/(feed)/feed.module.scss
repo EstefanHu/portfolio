@@ -1,9 +1,8 @@
 .wrapper {
   display: flex;
-  width: 100vw;
-  max-width: 1000px;
-  margin: var(--headerHeight) auto 0;
-  padding: 20px 15px 50px;
+  justify-content: space-between;
+  width: 100%;
+  padding: 20px 30px 50px;
 
   nav {
     display: flex;
@@ -34,7 +33,7 @@
     padding: 30px;
   }
 
-  @media screen and (max-width: 700px) {
+  @media screen and (max-width: 750px) {
     background-color: var(--backgroundColor);
     padding: 20px 10px 50px;
 
