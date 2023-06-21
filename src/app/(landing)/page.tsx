@@ -1,4 +1,3 @@
-import Link from 'next/link';
 import styles from './landing.module.scss';
 
 export default function Home() {
@@ -8,6 +7,8 @@ export default function Home() {
         J. <span>Estefan</span> Hu
       </h1>
       <p className={styles.headliner}>Web Developer</p>
+
+      
     </main>
   );
 }

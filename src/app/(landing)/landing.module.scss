@@ -2,7 +2,7 @@
   display: flex;
   flex-direction: column;
   width: 100vw;
-  max-width: 1200px;
+  max-width: 1000px;
   margin: var(--headerHeight) auto 0;
   padding: 20px 15px 50px;
 
@@ -13,6 +13,7 @@
 
     span {
       font-weight: bold;
+      color: var(--accent);
     }
   }
 

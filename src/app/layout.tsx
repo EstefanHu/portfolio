@@ -1,5 +1,7 @@
 import Link from 'next/link';
 import './globals.css';
+
+import Logo from '@/components/Logo';
 import PageLinks from '@/components/PageLinks';
 
 export const metadata = {
@@ -14,7 +16,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <body>
         <header>
           <Link href='/'>
-            <h1>E</h1>
+            <Logo />
           </Link>
 
           <nav>
