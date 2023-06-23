@@ -3,13 +3,13 @@ import styles from './landing.module.scss';
 
 const READS = [
   {
-    title: 'Who am I',
-    url: '/blg/p/who-am-i',
+    title: 'More About Me',
+    url: '/blg/who-am-i',
     createdAt: 'Jan 07 1996',
   },
   {
     title: 'A Meta Modern Maker',
-    url: '/blg/p/a-meta-modern-maker',
+    url: '/blg/',
     createdAt: 'Jun 20 2023',
   },
 ];
@@ -22,7 +22,7 @@ export default function Home() {
       </h1>
       <p className={styles.headliner}>Web Developer</p>
 
-      <section>
+      {/* <section>
         <h2>Reads</h2>
 
         {READS.map(({ title, url }) => (
@@ -32,7 +32,7 @@ export default function Home() {
             </article>
           </Link>
         ))}
-      </section>
+      </section> */}
     </main>
   );
 }
