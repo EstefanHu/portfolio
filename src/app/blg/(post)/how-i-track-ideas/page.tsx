@@ -35,23 +35,30 @@ export default function Page() {
 
       <p>The answer I have is threefold:</p>
 
-      <h3>1. Flexibility</h3>
+      <h4>1. Flexibility</h4>
 
       <p>
         I want the ability to connect what I create to several different outlets, each of which will have their own
-        protocols and interactions that is simply too difficult to do traditionally.
+        protocols and interactions that is simply too difficult to do with the already established tools and platforms.
+        Having the ability to connect to specific steps and trigger events will empower my creative process and,
+        ultimately, promote a stronger digital identity.
       </p>
 
-      <h3>2. Cust</h3>
-
-      <h3>3. Replication</h3>
+      <h4>2. Replication</h4>
 
       <p>
         I&apos;ve worked on a handful of side projects and, without exception, each of them could have benefitted from a
-        note to concept pipeline. As such, I think it would be a great tool to have a single replicatable or even
-        productized service that could generally satisfy this need.
+        note to concept pipeline. As such, As such, having a single, replicable, or even productized service that could
+        be applies generally would be a great tool in my developer toolbelt.
       </p>
 
+      <h4>3. Because I wanna</h4>
+
+      <p>
+        I mean how cool would it be to have your own, custom idea manager that you made yourself? I&apos;ve always
+        wanted my own personal assistant to manage my ideas but I can&apos;t afford that. So, I figured I could just
+        build one!
+      </p>
       {/* <div className={styles.heroImage}>
         <Image src='/svgs/jericho.v1.svg' alt='jericho v1' fill />
       </div> */}
