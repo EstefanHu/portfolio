@@ -4,6 +4,7 @@
   --layout: #ffffff;
   --accent: #dd2d44;
   --text: #333333;
+  --textSecondary: #757575;
   --headerHeight: 58px;
   --borderColor: ;
   --borderColor: #e6e6e6;
@@ -63,6 +64,7 @@ header {
   border-bottom: 1px solid var(--borderColor);
   position: fixed;
   top: 0;
+  z-index: 1000;
 
   @media screen and (max-width: 500px) {
     padding: 0 20px;
