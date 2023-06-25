@@ -19,6 +19,14 @@ export default function sitemap(): MetadataRoute.Sitemap {
       url: 'https://estefan.me/blg/a-bit-about-me',
       lastModified: new Date(),
     },
+    {
+      url: 'https://estefan.me/blg/what-the-crud',
+      lastModified: new Date(),
+    },
+    {
+      url: 'https://estefan.me/blg/stay-mean-stay-lean',
+      lastModified: new Date(),
+    },
     // prjkt pages
     {
       url: 'https://estefan.me/prjkt',
