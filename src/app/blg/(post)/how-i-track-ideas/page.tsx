@@ -1,7 +1,6 @@
-import Image from 'next/image';
 import Link from 'next/link';
-import styles from '../components.module.scss';
 import MetaSection from '@/components/MetaSection';
+import BlogImg from '@/components/BlogImg';
 
 export const metadata = {
   title: 'How I Track Ideas',
@@ -15,11 +14,11 @@ export default function Page() {
       <h1>How I Track Ideas</h1>
       <h2>A technical breakdown of my idea tracking process</h2>
 
-      <Image src='/images/blgs/ideas.webp' alt='cork board' className={styles.image} priority fill />
+      <BlogImg name='ideas' />
 
       <MetaSection>
         <p>
-          A fair warning, this is a technical breakdown of how I track my ideas rather than a philosophical or
+          A fair warning, this is primarily a technical breakdown of how I track my ideas rather than a philosophical or
           methodological. I intend this to be the first of many <Link href='/prjkts/logs'>architectural logs</Link> of
           projects that I build, to both demonstrate and track my progress as an engineer.
         </p>
@@ -56,9 +55,20 @@ export default function Page() {
 
       <p>
         I mean how cool would it be to have your own, custom idea manager that you made yourself? I&apos;ve always
-        wanted my own personal assistant to manage my ideas but I can&apos;t afford that. So, I figured I could just
-        build one!
+        wanted my own personal assistant to manage my ideas, but I can&apos;t afford a real one. So, I figured I could
+        just build one!
       </p>
+
+      <h3>A Pre-Production Solution</h3>
+
+      <p>
+        While large applications require far more forethought, a bespoke read focused service of this size generally
+        doesn&apos;t require much compute power, and, as such, can rely on a classical client/server architecture. While
+        naïve, this bare bones approach prevents feature creep by focusing on the highest leverage actions and allowing
+        for less important work to go to a back log for latter reference. You can read more about my experience with
+        this methodology in <Link href='/blg/stay-mean-stay-lean'>Stay Mean, Stay Lean</Link>.
+      </p>
+
       {/* <div className={styles.heroImage}>
         <Image src='/svgs/jericho.v1.svg' alt='jericho v1' fill />
       </div> */}
