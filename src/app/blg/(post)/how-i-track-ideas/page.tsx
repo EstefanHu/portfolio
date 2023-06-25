@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import MetaSection from '@/components/MetaSection';
 import BlogImg from '@/components/BlogImg';
+import GoToAppendix from '@/components/GoToAppendix';
 
 export const metadata = {
   title: 'How I Track Ideas',
@@ -28,8 +29,8 @@ export default function Page() {
 
       <p>
         Why build yet another notes app when there are plenty of excellent options out there to choose from? Why build a
-        public repository of ideas when twitter already has all the features I would need for free? Why spend the time
-        rebuilding an easily reproduced widget?
+        public repository of ideas when twitter already has all the features I would need for{' '}
+        <GoToAppendix>free</GoToAppendix>? Why spend the time building an easily reproduced widget?
       </p>
 
       <p>The answer I have is threefold:</p>
@@ -62,11 +63,12 @@ export default function Page() {
       <h3>A Pre-Production Solution</h3>
 
       <p>
-        While large applications require far more forethought, a bespoke read focused service of this size generally
-        doesn&apos;t require much compute power, and, as such, can rely on a classical client/server architecture. While
-        naïve, this bare bones approach prevents feature creep by focusing on the highest leverage actions and allowing
-        for less important work to go to a back log for latter reference. You can read more about my experience with
-        this methodology in <Link href='/blg/stay-mean-stay-lean'>Stay Mean, Stay Lean</Link>.
+        While large applications require far more forethought, a bespoke <GoToAppendix>read</GoToAppendix> focused
+        service of this size generally doesn&apos;t require much compute power, and, as such, can rely on a classical{' '}
+        <GoToAppendix>client/server</GoToAppendix> architecture. While naïve, this bare bones approach prevents feature
+        creep by focusing on the highest leverage actions and allowing for less important work to go to a back log for
+        latter reference. You can read more about my experience with this methodology in{' '}
+        <Link href='/blg/stay-mean-stay-lean'>Stay Mean, Stay Lean</Link>.
       </p>
 
       {/* <div className={styles.heroImage}>
