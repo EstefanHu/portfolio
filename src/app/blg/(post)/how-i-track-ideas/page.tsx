@@ -15,7 +15,7 @@ export default function Page() {
       <h1>How I Track Ideas</h1>
       <h2>A technical breakdown of my idea tracking process</h2>
 
-      <BlogImg name='ideas' />
+      <BlogImg name='ideas' primary={true} />
 
       <MetaSection>
         <p>

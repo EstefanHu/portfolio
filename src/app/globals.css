@@ -6,13 +6,14 @@
   --text: #333333;
   --textSecondary: #757575;
   --headerHeight: 58px;
-  --borderColor: ;
   --borderColor: #e6e6e6;
+  --background: white;
+  --backgroundAccent: #fafafa;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --component: #333333;
+    --background: #333333;
     --backgroundAccent: #292929;
     --background: #1e1e1e;
     --layout: #181818;
