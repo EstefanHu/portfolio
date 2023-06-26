@@ -15,7 +15,7 @@ export default function Page() {
       <h1>How I Track Ideas</h1>
       <h2>A technical breakdown of my idea tracking process</h2>
 
-      <BlogImg name='ideas' />
+      <BlogImg name='ideas' primary={true} />
 
       <MetaSection>
         <p>
@@ -70,6 +70,8 @@ export default function Page() {
         latter reference. You can read more about my experience with this methodology in{' '}
         <Link href='/blg/stay-mean-stay-lean'>Stay Mean, Stay Lean</Link>.
       </p>
+
+      <p>So, what does it look like?</p>
 
       {/* <div className={styles.heroImage}>
         <Image src='/svgs/jericho.v1.svg' alt='jericho v1' fill />

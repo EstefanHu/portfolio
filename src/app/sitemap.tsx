@@ -12,19 +12,19 @@ export default function sitemap(): MetadataRoute.Sitemap {
       lastModified: new Date(),
     },
     {
-      url: 'https://estefan.me/blg/how-i-track-ideas',
-      lastModified: new Date(),
-    },
-    {
       url: 'https://estefan.me/blg/a-bit-about-me',
       lastModified: new Date(),
     },
     {
-      url: 'https://estefan.me/blg/what-the-crud',
+      url: 'https://estefan.me/blg/how-i-track-ideas',
       lastModified: new Date(),
     },
     {
       url: 'https://estefan.me/blg/stay-mean-stay-lean',
+      lastModified: new Date(),
+    },
+    {
+      url: 'https://estefan.me/blg/what-the-crud',
       lastModified: new Date(),
     },
     // prjkt pages

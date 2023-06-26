@@ -1,7 +1,6 @@
 const STYLES = {
   display: 'flex',
   width: '100vw',
-  maxWidth: '1000px',
   margin: '60px auto 0',
 };
 
