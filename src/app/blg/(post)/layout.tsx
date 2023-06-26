@@ -30,7 +30,9 @@ export default function PostLayout({ children }: { children: React.ReactNode }) 
     <article className={styles.wrapper}>
       <div className={styles.blog}>{children}</div>
 
-      <footer>
+      <div className={styles.appendix}></div>
+
+      <div className={styles.more}>
         <div>
           {POSTS.map(({ title, url, imgName }) => {
             return (
@@ -43,7 +45,7 @@ export default function PostLayout({ children }: { children: React.ReactNode }) 
             );
           })}
         </div>
-      </footer>
+      </div>
     </article>
   );
 }

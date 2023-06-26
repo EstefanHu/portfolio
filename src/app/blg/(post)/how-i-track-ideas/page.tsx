@@ -71,6 +71,8 @@ export default function Page() {
         <Link href='/blg/stay-mean-stay-lean'>Stay Mean, Stay Lean</Link>.
       </p>
 
+      <p>So, what does it look like?</p>
+
       {/* <div className={styles.heroImage}>
         <Image src='/svgs/jericho.v1.svg' alt='jericho v1' fill />
       </div> */}

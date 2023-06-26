@@ -42,7 +42,8 @@ body {
   background-color: var(--background);
 }
 
-a {
+a,
+button {
   text-decoration: none;
   color: var(--text);
 }
