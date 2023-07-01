@@ -6,8 +6,8 @@
   margin: var(--headerHeight) auto 0;
   padding: 20px 15px 50px;
 
-  .name {
-    font-size: 2.5rem;
+  h1 {
+    font-size: 3rem;
     margin-top: 50px;
     font-weight: 300;
 
@@ -17,37 +17,9 @@
     }
   }
 
-  .headliner {
+  h2 {
     margin-top: 10px;
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     margin-bottom: 40vh;
-  }
-
-  section {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    width: 100%;
-
-    h2 {
-      font-size: 1.1rem;
-      font-weight: bold;
-      text-transform: uppercase;
-      margin-bottom: 10px;
-    }
-
-    article {
-      margin-bottom: 20px;
-      text-align: right;
-
-      h3 {
-        font-size: 2rem;
-        transition: color 0.2s;
-
-        &:hover {
-          color: var(--accent);
-        }
-      }
-    }
   }
 }
