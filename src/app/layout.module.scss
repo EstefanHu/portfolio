@@ -80,6 +80,15 @@
                         margin-bottom: 10px;
                     }
                 }
+
+                nav {
+                    display: flex;
+
+                    a {
+                        margin-left: 15px;
+                        text-transform: capitalize;
+                    }
+                }
             }
 
             &.legal {

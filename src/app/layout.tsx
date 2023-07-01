@@ -44,6 +44,12 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                 <p>Software Developer</p>
                 <p>Seattle, Washington</p>
               </div>
+
+              <nav>
+                <Link href='/blg'>blog</Link>
+                <Link href='/prjkts'>projects</Link>
+                <Link href='/contact'>contact</Link>
+              </nav>
             </div>
 
             <div className={styles.legal}>
