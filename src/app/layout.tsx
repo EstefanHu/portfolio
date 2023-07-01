@@ -40,7 +40,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           <footer>
             <div className={styles.footerTop}>
               <div className={styles.branding}>
-                <p className={styles.name}>estefan</p>
+                <Link href='/'>
+                  <p className={styles.name}>estefan</p>
+                </Link>
                 <p>Software Developer</p>
                 <p>Seattle, Washington</p>
               </div>

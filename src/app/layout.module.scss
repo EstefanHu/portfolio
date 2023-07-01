@@ -74,9 +74,11 @@
                         margin-bottom: 15px;
                         font-size: 1.3rem;
                         text-transform: capitalize;
+                        cursor: pointer;
                     }
 
                     p {
+                        cursor: default;
                         margin-bottom: 10px;
                     }
                 }
@@ -93,6 +95,7 @@
 
             &.legal {
                 font-size: 0.8rem;
+                cursor: default;
 
                 span {
                     svg {
@@ -101,8 +104,23 @@
                         margin-right: 10px;
                     }
                 }
+            }
+        }
+    }
 
-                @media only screen and (max-width: 500px) {
+    @media only screen and (max-width: 500px) {
+        footer {
+            div {
+                &.footerTop {
+                    flex-direction: column-reverse;
+
+                    nav {
+                        margin-bottom: 35px;
+                        justify-content: space-around;
+                    }
+                }
+
+                &.legal {
                     span {
                         margin-bottom: 15px;
                     }
