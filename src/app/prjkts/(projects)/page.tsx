@@ -12,7 +12,7 @@ const PROJECTS = [
 const IDEAS = [
   {
     name: 'Redline',
-    url: 'https://www.quarkify.ai',
+    url: 'https://prjkt-redline.vercel.app',
     description: '',
   },
 ];
@@ -35,14 +35,16 @@ export default function Prjkts() {
 
       <section className={styles.section}>
         <div className={styles.header}>
-          <h2>active projects</h2>
-          <p>Things Im actively working on</p>
+          <h2>Prototype</h2>
+
+          <p>Active, under development, projects</p>
         </div>
 
-        {PROJECTS.map(({ name, url, description }) => {
+        {IDEAS.map(({ name, url, description }) => {
           return (
             <div key={name} className={styles.idea}>
               <h3>{name}</h3>
+              <iframe src={url} frameBorder={0} />
             </div>
           );
         })}
@@ -50,11 +52,20 @@ export default function Prjkts() {
 
       <section className={styles.section}>
         <div className={styles.header}>
-          <h2>suspended ideas</h2>
-          <p>A queue of ideas</p>
+          <h2>Concepts</h2>
+
+          <p>Early speculations and designs</p>
+        </div>
+      </section>
+
+      <section className={styles.section}>
+        <div className={styles.header}>
+          <h2>ideas</h2>
+
+          <p>A queue of thoughts</p>
         </div>
 
-        {IDEAS.map(({ name, url, description }) => {
+        {PROJECTS.map(({ name, url, description }) => {
           return (
             <div key={name} className={styles.idea}>
               <h3>{name}</h3>
