@@ -1,18 +1,18 @@
 import Link from 'next/link';
 import styles from './projects.module.scss';
 
-const PROJECTS = [
+const PROTOTYPES = [
   {
-    name: 'Quarkify',
-    url: 'https://www.quarkify.ai',
+    name: 'Redline',
+    url: 'https://prjkt-redline.vercel.app',
     description: '',
   },
 ];
 
 const IDEAS = [
   {
-    name: 'Redline',
-    url: 'https://prjkt-redline.vercel.app',
+    name: 'Quarkify',
+    url: 'https://www.quarkify.ai',
     description: '',
   },
 ];
@@ -40,7 +40,7 @@ export default function Prjkts() {
           <p>Active, under development, projects</p>
         </div>
 
-        {IDEAS.map(({ name, url, description }) => {
+        {PROTOTYPES.map(({ name, url, description }) => {
           return (
             <div key={name} className={styles.idea}>
               <h3>{name}</h3>
@@ -65,7 +65,7 @@ export default function Prjkts() {
           <p>A queue of thoughts</p>
         </div>
 
-        {PROJECTS.map(({ name, url, description }) => {
+        {IDEAS.map(({ name, url, description }) => {
           return (
             <div key={name} className={styles.idea}>
               <h3>{name}</h3>
