@@ -1,19 +1,30 @@
 import Link from 'next/link';
 import styles from './projects.module.scss';
 
-const PROJECTS = [
+const PROTOTYPES = [
   {
-    name: 'Quarkify',
-    url: 'https://www.quarkify.ai',
+    name: 'redline',
+    status: 'inactive',
+    description: 'A simple, collaborative CMS for writers',
+  },
+  {
+    name: 'jericho',
+    status: 'active',
+    description: 'A full life cycle idea tracker',
+  },
+];
+
+const CONCEPTS = [
+  {
+    name: 'quarkify',
     description: '',
   },
 ];
 
 const IDEAS = [
   {
-    name: 'Redline',
-    url: 'https://www.quarkify.ai',
-    description: '',
+    name: 'meta muse',
+    description: 'A localized mesh network api',
   },
 ];
 
@@ -35,29 +46,55 @@ export default function Prjkts() {
 
       <section className={styles.section}>
         <div className={styles.header}>
-          <h2>active projects</h2>
-          <p>Things Im actively working on</p>
+          <h2>Prototype</h2>
+
+          <p>Active, under development, projects</p>
         </div>
 
-        {PROJECTS.map(({ name, url, description }) => {
+        {PROTOTYPES.map(({ name, status, description }) => {
           return (
-            <div key={name} className={styles.idea}>
-              <h3>{name}</h3>
-            </div>
+            <Link key={name} href={`/prjkts/prototypes?name=${name}`}>
+              <div className={styles.card}>
+                <p className={styles.status}>{status}</p>
+                <h3>{name}</h3>
+                <p>{description}</p>
+              </div>
+            </Link>
           );
         })}
       </section>
 
       <section className={styles.section}>
         <div className={styles.header}>
-          <h2>suspended ideas</h2>
-          <p>A queue of ideas</p>
+          <h2>Concepts</h2>
+
+          <p>Early speculations and designs</p>
         </div>
 
-        {IDEAS.map(({ name, url, description }) => {
+        {CONCEPTS.map(({ name, description }) => {
           return (
-            <div key={name} className={styles.idea}>
+            <Link key={name} href={`/prjkts/concepts?name=${name}`}>
+              <div className={styles.card}>
+                <h3>{name}</h3>
+                <p>{description}</p>
+              </div>
+            </Link>
+          );
+        })}
+      </section>
+
+      <section className={styles.section}>
+        <div className={styles.header}>
+          <h2>ideas</h2>
+
+          <p>A queue of thoughts</p>
+        </div>
+
+        {IDEAS.map(({ name, description }) => {
+          return (
+            <div key={name} className={styles.card}>
               <h3>{name}</h3>
+              <p>{description}</p>
             </div>
           );
         })}
