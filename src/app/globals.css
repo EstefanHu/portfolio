@@ -1,5 +1,5 @@
 :root {
-  --max-width: 1100px;
+  --max-width: 1000px;
   --border-radius: 6px;
   --layout: #ffffff;
   --accent: #dd2d44;
@@ -53,54 +53,6 @@ h2,
 h3,
 p {
   color: var(--text);
-}
-
-header {
-  width: 100vw;
-  height: var(--headerHeight);
-  background-color: var(--layout);
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 0 30px;
-  border-bottom: 1px solid var(--borderColor);
-  position: fixed;
-  top: 0;
-  z-index: 1000;
-
-  @media screen and (max-width: 500px) {
-    padding: 0 20px;
-  }
-}
-
-header h1 {
-  font-size: 1.5rem;
-  font-weight: bold;
-  transition: color 0.2s;
-
-  &:hover {
-    color: var(--accent);
-  }
-}
-
-header > nav {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  height: 100%;
-  width: 220px;
-}
-
-header > nav > a {
-  text-transform: uppercase;
-  font-weight: bold;
-  font-size: 0.75rem;
-  transition: color 0.2s;
-  color: var(--text);
-
-  &:hover {
-    color: var(--accent);
-  }
 }
 
 @media (prefers-color-scheme: dark) {
