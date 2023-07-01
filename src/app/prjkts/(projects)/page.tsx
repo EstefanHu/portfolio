@@ -3,22 +3,28 @@ import styles from './projects.module.scss';
 
 const PROTOTYPES = [
   {
-    name: 'Redline',
+    name: 'redline',
     status: 'inactive',
     description: 'A simple, collaborative CMS for writers',
   },
   {
-    name: 'Jericho',
+    name: 'jericho',
     status: 'active',
     description: 'A full life cycle idea tracker',
   },
 ];
 
+const CONCEPTS = [
+  {
+    name: 'quarkify',
+    description: '',
+  },
+];
+
 const IDEAS = [
   {
-    name: 'Quarkify',
-    url: 'https://www.quarkify.ai',
-    description: '',
+    name: 'meta muse',
+    description: 'A localized mesh network api',
   },
 ];
 
@@ -64,6 +70,17 @@ export default function Prjkts() {
 
           <p>Early speculations and designs</p>
         </div>
+
+        {CONCEPTS.map(({ name, description }) => {
+          return (
+            <Link key={name} href={`/prjkts/concepts?name=${name}`}>
+              <div className={styles.card}>
+                <h3>{name}</h3>
+                <p>{description}</p>
+              </div>
+            </Link>
+          );
+        })}
       </section>
 
       <section className={styles.section}>
@@ -73,10 +90,11 @@ export default function Prjkts() {
           <p>A queue of thoughts</p>
         </div>
 
-        {IDEAS.map(({ name, url, description }) => {
+        {IDEAS.map(({ name, description }) => {
           return (
-            <div key={name} className={styles.idea}>
+            <div key={name} className={styles.card}>
               <h3>{name}</h3>
+              <p>{description}</p>
             </div>
           );
         })}
