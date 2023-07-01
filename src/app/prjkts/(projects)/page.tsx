@@ -4,8 +4,13 @@ import styles from './projects.module.scss';
 const PROTOTYPES = [
   {
     name: 'Redline',
-    url: 'https://prjkt-redline.vercel.app',
-    description: '',
+    status: 'inactive',
+    description: 'A simple, collaborative CMS for writers',
+  },
+  {
+    name: 'Jericho',
+    status: 'active',
+    description: 'A full life cycle idea tracker',
   },
 ];
 
@@ -40,12 +45,15 @@ export default function Prjkts() {
           <p>Active, under development, projects</p>
         </div>
 
-        {PROTOTYPES.map(({ name, url, description }) => {
+        {PROTOTYPES.map(({ name, status, description }) => {
           return (
-            <div key={name} className={styles.idea}>
-              <h3>{name}</h3>
-              <iframe src={url} frameBorder={0} />
-            </div>
+            <Link key={name} href={`/prjkts/prototypes?name=${name}`}>
+              <div className={styles.card}>
+                <p className={styles.status}>{status}</p>
+                <h3>{name}</h3>
+                <p>{description}</p>
+              </div>
+            </Link>
           );
         })}
       </section>
