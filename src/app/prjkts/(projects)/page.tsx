@@ -26,6 +26,11 @@ const IDEAS = [
     name: 'meta muse',
     description: 'A localized mesh network api',
   },
+  {
+    name: 'identity generator',
+    description:
+      'Given a growing set of events, I want to construct 1. A distilled accumulation of all my events into one entry and 2. have a timeline of all my events',
+  },
 ];
 
 export default function Prjkts() {
