@@ -31,6 +31,18 @@ const IDEAS = [
     description:
       'Given a growing set of events, I want to construct 1. A distilled accumulation of all my events into one entry and 2. have a timeline of all my events',
   },
+  {
+    name: 'blind 75',
+    description: 'Service that tracks my algorithm studying progress',
+  },
+  {
+    name: 'tea sisters',
+    description: 'Private writing site that generates obfuscated tweets from text entry',
+  },
+  {
+    name: 'recipe completer',
+    description: 'Given a set of ingredients generate recipes that can be made with them',
+  },
 ];
 
 export default function Prjkts() {
