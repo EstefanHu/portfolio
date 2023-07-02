@@ -35,8 +35,8 @@ const IDEAS = [
 
 export default function Prjkts() {
   return (
-    <>
-      <section className={styles.section}>
+    <div className={styles.page}>
+      <section>
         <h1>Projects</h1>
 
         <p className={styles.description}>
@@ -49,7 +49,7 @@ export default function Prjkts() {
         </p>
       </section>
 
-      <section className={styles.section}>
+      <section>
         <div className={styles.header}>
           <h2>Prototype</h2>
 
@@ -69,7 +69,7 @@ export default function Prjkts() {
         })}
       </section>
 
-      <section className={styles.section}>
+      <section>
         <div className={styles.header}>
           <h2>Concepts</h2>
 
@@ -88,7 +88,7 @@ export default function Prjkts() {
         })}
       </section>
 
-      <section className={styles.section}>
+      <section>
         <div className={styles.header}>
           <h2>ideas</h2>
 
@@ -104,6 +104,6 @@ export default function Prjkts() {
           );
         })}
       </section>
-    </>
+    </div>
   );
 }

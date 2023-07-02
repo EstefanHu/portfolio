@@ -1,71 +1,79 @@
-.section {
-    margin-bottom: 40px;
+.page {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 800px;
+    margin: var(--headerHeight) auto 0;
 
-    h1 {
-        font-size: 5rem;
-        font-weight: bold;
-        margin-bottom: 15px;
+    section {
+        margin-bottom: 40px;
 
-        @media screen and (max-width: 500px) {
-            font-size: 3rem;
-        }
-    }
-
-    .description {
-        line-height: 25px;
-
-        @media screen and (max-width: 500px) {
-            line-height: 20px;
-        }
-    }
-
-    .header {
-        display: flex;
-        align-items: baseline;
-        justify-content: space-between;
-        border-bottom: 1px solid var(--borderColor);
-        margin-bottom: 15px;
-        padding-bottom: 5px;
-
-        h2 {
-            font-size: 1.5rem;
+        h1 {
+            font-size: 5rem;
             font-weight: bold;
-            text-transform: capitalize;
-            margin-right: 15px;
-        }
+            margin-bottom: 15px;
 
-        p {
-            font-size: 0.8rem;
-        }
-
-        @media screen and (max-width: 400px) {
-            flex-direction: column;
-            padding-bottom: 8px;
-
-            h2 {
-                margin-bottom: 5px;
-                font-size: 1.25rem;
+            @media screen and (max-width: 500px) {
+                font-size: 3rem;
             }
         }
-    }
 
-    .card {
-        margin-bottom: 30px;
-        padding: 10px 5px;
-        text-transform: capitalize;
+        .description {
+            line-height: 25px;
 
-        h3 {
-            font-size: 2rem;
-            font-weight: bold;
-            margin-bottom: 10px;
+            @media screen and (max-width: 500px) {
+                line-height: 20px;
+            }
         }
 
-        p {
-            &.status {
-                color: var(--accent);
-                text-transform: uppercase;
+        .header {
+            display: flex;
+            align-items: baseline;
+            justify-content: space-between;
+            border-bottom: 1px solid var(--borderColor);
+            margin-bottom: 15px;
+            padding-bottom: 5px;
+
+            h2 {
+                font-size: 1.5rem;
                 font-weight: bold;
-                font-size: 0.7rem;
+                text-transform: capitalize;
+                margin-right: 15px;
+            }
+
+            p {
+                font-size: 0.8rem;
+            }
+
+            @media screen and (max-width: 400px) {
+                flex-direction: column;
+                padding-bottom: 8px;
+
+                h2 {
+                    margin-bottom: 5px;
+                    font-size: 1.25rem;
+                }
+            }
+        }
+
+        .card {
+            margin-bottom: 30px;
+            padding: 10px 0;
+            text-transform: capitalize;
+
+            h3 {
+                font-size: 2rem;
+                font-weight: bold;
+                margin-bottom: 10px;
+            }
+
+            p {
+                &.status {
+                    color: var(--accent);
+                    text-transform: uppercase;
+                    font-weight: bold;
+                    font-size: 0.7rem;
+                }
             }
         }
     }
