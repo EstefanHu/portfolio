@@ -7,6 +7,10 @@ export default function Home() {
         J. <span>Estefan</span> Hu
       </h1>
       <h2>Web Developer</h2>
+
+      <section>
+        <h3>To make, or not to make</h3>
+      </section>
     </main>
   );
 }

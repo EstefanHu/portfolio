@@ -7,9 +7,14 @@ import Logo from '@/components/Logo';
 import PageLinks from '@/components/PageLinks';
 
 export const metadata = {
+  applicationName: 'Estefans Portfolio',
   title: 'Estefan Hu',
   description: 'Software Engineer',
   keywords: ['estefan', 'hu', 'dingus'],
+  creator: 'Estefan Hu',
+  author: 'Estefan Hu',
+  locale: 'en_US',
+  type: 'website',
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
@@ -48,6 +53,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
               </div>
 
               <nav>
+                <Link href='/blg/a-bit-about-me'>about</Link>
                 <Link href='/blg'>blog</Link>
                 <Link href='/prjkts'>projects</Link>
                 <Link href='/contact'>contact</Link>

@@ -26,12 +26,17 @@ const IDEAS = [
     name: 'meta muse',
     description: 'A localized mesh network api',
   },
+  {
+    name: 'identity generator',
+    description:
+      'Given a growing set of events, I want to construct 1. A distilled accumulation of all my events into one entry and 2. have a timeline of all my events',
+  },
 ];
 
 export default function Prjkts() {
   return (
-    <>
-      <section className={styles.section}>
+    <div className={styles.page}>
+      <section>
         <h1>Projects</h1>
 
         <p className={styles.description}>
@@ -44,7 +49,7 @@ export default function Prjkts() {
         </p>
       </section>
 
-      <section className={styles.section}>
+      <section>
         <div className={styles.header}>
           <h2>Prototype</h2>
 
@@ -64,7 +69,7 @@ export default function Prjkts() {
         })}
       </section>
 
-      <section className={styles.section}>
+      <section>
         <div className={styles.header}>
           <h2>Concepts</h2>
 
@@ -83,7 +88,7 @@ export default function Prjkts() {
         })}
       </section>
 
-      <section className={styles.section}>
+      <section>
         <div className={styles.header}>
           <h2>ideas</h2>
 
@@ -99,6 +104,6 @@ export default function Prjkts() {
           );
         })}
       </section>
-    </>
+    </div>
   );
 }

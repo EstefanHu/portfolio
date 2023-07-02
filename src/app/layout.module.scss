@@ -89,6 +89,7 @@
                     a {
                         margin-left: 15px;
                         text-transform: capitalize;
+                        padding: 8px 16px;
                     }
                 }
             }
@@ -115,8 +116,15 @@
                     flex-direction: column-reverse;
 
                     nav {
-                        margin-bottom: 35px;
+                        margin-bottom: 25px;
                         justify-content: space-around;
+                        flex-direction: column;
+
+                        a {
+                            margin-bottom: 10px;
+                            margin-left: 0;
+                            padding: 8px;
+                        }
                     }
                 }
 
