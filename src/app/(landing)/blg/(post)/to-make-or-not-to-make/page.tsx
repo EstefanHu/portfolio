@@ -1,7 +1,7 @@
 export default function Page() {
   return (
     <>
-      <h1>A Bit About Me</h1>
+      <h1>to make or not to make</h1>
     </>
   );
 }
