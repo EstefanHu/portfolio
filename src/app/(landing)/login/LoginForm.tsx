@@ -14,7 +14,7 @@ export default function LoginForm() {
   const [formData, setFormData] = useState(DEFAULT_DATA);
   const [errorData, setErrorData] = useState(DEFAULT_DATA);
 
-  const handleSignIn = async (e: React.FormEvent<HTMLInputElement>) => {
+  const handleSignIn = async (e: React.FormEvent) => {
     e.preventDefault();
 
     if (isLoading) return;
@@ -48,5 +48,29 @@ export default function LoginForm() {
     router.push('/home');
   };
 
-  return <form></form>;
+  return <form noValidate autoComplete='off' onSubmit={handleSignIn}>
+    <fieldset>
+      <input
+        type='email'
+        placeholder='email address'
+        value={formData.emailAddress}
+        onChange={(e) => setFormData({ ...formData, emailAddress: e.target.value })}
+      />
+      <p>{errorData.emailAddress}</p>
+
+      <input
+        type='password'
+        placeholder='password'
+        value={formData.password}
+        onChange={(e) => setFormData({ ...formData, password: e.target.value })}
+      />
+      <p>{errorData.password}</p>
+    </fieldset>
+
+    <input type='submit' className='hidden' />
+
+    <button onClick={handleSignIn} type='submit'>
+      Sign in
+    </button>
+  </form>;
 }

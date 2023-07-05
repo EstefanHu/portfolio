@@ -1,20 +1,16 @@
 import LoginForm from './LoginForm';
+import Link from 'next/link';
 
 import styles from './login.module.scss';
 
 export default function Page() {
-  return (
-    <main className={styles.page}>
-      <h1>Login.</h1>
-      <h1>Login.</h1>
-      <h1>Login.</h1>
-      <h1>Login.</h1>
-      <h1>Login.</h1>
-      <h1>Login.</h1>
+    return (
+        <main className={styles.page}>
+            <h1>Login.</h1>
 
-      <LoginForm />
+            <LoginForm />
 
-      <p>Looking for a behind the scenes access?</p>
-    </main>
-  );
+            <p className={styles.request}>Looking for a behind the scenes access? <span><Link href='/contact'>Request</Link> it!</span></p>
+        </main>
+    );
 }
