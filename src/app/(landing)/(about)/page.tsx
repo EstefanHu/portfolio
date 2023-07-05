@@ -23,8 +23,11 @@ export default function Home() {
         </div>
       </section>
 
-      <section>
-        <h3>A bit about me</h3>
+      <section className={styles.bio}>
+        <div>
+          <h3>A bit about me</h3>
+
+        </div>
       </section>
     </main>
   );

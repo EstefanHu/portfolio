@@ -2,15 +2,17 @@
   display: flex;
   flex-direction: column;
   width: 100vw;
-  max-width: var(--max-width);
-  margin: var(--headerHeight) auto 0;
-  padding: 20px 15px 50px;
+  padding-top: var(--headerHeight);
 
   .hero {
+    width: 100%;
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding: 50px 15px;
+    display: flex;
     flex-direction: row;
     justify-content: space-between;
     padding-top: 50px;
-    margin-bottom: 50px;
 
     h1 {
       font-size: 3rem;
@@ -70,10 +72,17 @@
     }
   }
 
-  section {
+  .bio {
     display: flex;
     flex-direction: column;
-    width: 100%;
+    background-color: var(--component);
+    padding: 35px 15px;
+
+    & > div {
+      width: 100%;
+      max-width: var(--max-width);
+      margin: 0 auto;
+    }
 
     h3 {
       font-size: 1.3rem;
