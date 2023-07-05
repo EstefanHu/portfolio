@@ -10,7 +10,10 @@ export default function Page() {
 
             <LoginForm />
 
-            <p className={styles.request}>Looking for a behind the scenes access? <span><Link href='/contact'>Request</Link> it!</span></p>
+            <p className={styles.request}>
+                Looking for a behind the scenes access?{' '}
+                <span><Link href='/contact?r=request%20%access'>Request</Link> it!</span>
+            </p>
         </main>
     );
 }

@@ -114,6 +114,10 @@
               padding: 8px 0;
               font-weight: 300;
               font-size: 0.95rem;
+
+              &:hover {
+                text-decoration: underline;
+              }
             }
           }
         }
@@ -134,21 +138,23 @@
     }
   }
 
-  @media only screen and (max-width: 500px) {
+  @media only screen and (max-width: 550px) {
     footer {
       div {
         &.footerTop {
           flex-direction: column-reverse;
 
           nav {
-            margin-bottom: 25px;
+            margin-bottom: 35px;
             justify-content: space-around;
-            flex-direction: column;
 
-            a {
-              margin-bottom: 10px;
-              margin-left: 0;
-              padding: 8px;
+            span {
+              align-items: flex-start;
+              margin: 0 15px 0 0;
+
+              a {
+                padding: 8px;
+              }
             }
           }
         }
@@ -159,6 +165,20 @@
           }
 
           flex-direction: column;
+        }
+      }
+    }
+  }
+
+  @media only screen and (max-width: 380px) {
+    footer {
+      div.footerTop {
+        nav {
+          flex-direction: column;
+
+          span {
+            margin-top: 25px;
+          }
         }
       }
     }
