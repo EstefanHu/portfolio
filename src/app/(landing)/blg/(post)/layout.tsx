@@ -9,8 +9,8 @@ const POSTS = [
     imgName: 'do-something',
   },
   {
-    title: 'A Bit About Me',
-    url: '/a-bit-about-me',
+    title: 'To Make Or Not To Make',
+    url: '/to-make-or-not-to-make',
     imgName: 'yellow',
   },
   {

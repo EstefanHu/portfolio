@@ -24,7 +24,7 @@ export default function Home() {
       </section>
 
       <section>
-        <h3></h3>
+        <h3>A bit about me</h3>
       </section>
     </main>
   );
