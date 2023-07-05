@@ -1,141 +1,186 @@
 .header {
-    width: 100vw;
-    height: var(--headerHeight);
-    background-color: var(--layout);
+  width: 100vw;
+  height: var(--headerHeight);
+  background-color: var(--layout);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 30px;
+  border-bottom: 1px solid var(--borderColor);
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+
+  h1 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    transition: color 0.2s;
+
+    &:hover {
+      color: var(--accent);
+    }
+  }
+
+  nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0 30px;
-    border-bottom: 1px solid var(--borderColor);
-    position: fixed;
-    top: 0;
-    z-index: 1000;
+    height: 100%;
+    width: 220px;
 
-    h1 {
-        font-size: 1.5rem;
-        font-weight: bold;
-        transition: color 0.2s;
+    a {
+      text-transform: uppercase;
+      font-weight: bold;
+      font-size: 0.75rem;
+      transition: color 0.2s;
+      color: var(--text);
 
-        &:hover {
-            color: var(--accent);
-        }
+      &:hover {
+        color: var(--accent);
+      }
     }
+  }
 
-    nav {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        height: 100%;
-        width: 220px;
-
-        a {
-            text-transform: uppercase;
-            font-weight: bold;
-            font-size: 0.75rem;
-            transition: color 0.2s;
-            color: var(--text);
-
-            &:hover {
-                color: var(--accent);
-            }
-        }
-    }
-
-    @media screen and (max-width: 500px) {
-        padding: 0 20px;
-    }
+  @media screen and (max-width: 500px) {
+    padding: 0 20px;
+  }
 }
 
 .footerWrapper {
+  width: 100%;
+  display: flex;
+  background-color: var(--layout);
+  padding: 55px 15px 30px;
+
+  footer {
     width: 100%;
-    display: flex;
-    background-color: var(--layout);
-    padding: 55px 15px 30px;
+    max-width: 800px;
+    margin: 0 auto;
 
-    footer {
-        width: 100%;
-        max-width: 800px;
-        margin: 0 auto;
+    div {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
 
-        div {
+      &.footerTop {
+        margin-bottom: 40px;
+
+        .branding {
+          width: 160px;
+          display: flex;
+          flex-direction: column;
+          justify-content: flex-start;
+          margin-right: 50px;
+
+          .name {
+            font-weight: bold;
+            margin-bottom: 15px;
+            font-size: 1.3rem;
+            text-transform: capitalize;
+            cursor: pointer;
+            color: #f3f3f3;
+            background-color: var(--accent);
+            padding: 5px 7px;
+            border-radius: 4px;
+            width: 100%;
+          }
+
+          p {
+            cursor: default;
+            margin-bottom: 8px;
+            padding: 0 3px;
+          }
+        }
+
+        nav {
+          display: flex;
+          flex-grow: 1;
+
+          span {
             display: flex;
-            flex-direction: row;
-            justify-content: space-between;
+            flex-direction: column;
+            align-items: flex-end;
+            margin-left: 15px;
+            flex-grow: 1;
 
-            &.footerTop {
-                margin-bottom: 40px;
-
-                .branding {
-                    display: flex;
-                    flex-direction: column;
-
-                    .name {
-                        font-weight: bold;
-                        margin-bottom: 15px;
-                        font-size: 1.3rem;
-                        text-transform: capitalize;
-                        cursor: pointer;
-                    }
-
-                    p {
-                        cursor: default;
-                        margin-bottom: 10px;
-                    }
-                }
-
-                nav {
-                    display: flex;
-
-                    a {
-                        margin-left: 15px;
-                        text-transform: capitalize;
-                        padding: 8px 16px;
-                    }
-                }
+            h4 {
+              text-transform: capitalize;
+              font-weight: 500;
+              margin-bottom: 6px;
             }
 
-            &.legal {
-                font-size: 0.8rem;
-                cursor: default;
+            a {
+              text-transform: capitalize;
+              padding: 8px 0;
+              font-weight: 300;
+              font-size: 0.95rem;
 
-                span {
-                    svg {
-                        height: 25px;
-                        width: 25px;
-                        margin-right: 10px;
-                    }
-                }
+              &:hover {
+                text-decoration: underline;
+              }
             }
+          }
         }
-    }
+      }
 
-    @media only screen and (max-width: 500px) {
-        footer {
-            div {
-                &.footerTop {
-                    flex-direction: column-reverse;
+      &.legal {
+        font-size: 0.8rem;
+        cursor: default;
 
-                    nav {
-                        margin-bottom: 25px;
-                        justify-content: space-around;
-                        flex-direction: column;
-
-                        a {
-                            margin-bottom: 10px;
-                            margin-left: 0;
-                            padding: 8px;
-                        }
-                    }
-                }
-
-                &.legal {
-                    span {
-                        margin-bottom: 15px;
-                    }
-
-                    flex-direction: column;
-                }
-            }
+        span {
+          svg {
+            height: 25px;
+            width: 25px;
+            margin-right: 10px;
+          }
         }
+      }
     }
+  }
+
+  @media only screen and (max-width: 550px) {
+    footer {
+      div {
+        &.footerTop {
+          flex-direction: column-reverse;
+
+          nav {
+            margin-bottom: 35px;
+            justify-content: space-around;
+
+            span {
+              align-items: flex-start;
+              margin: 0 15px 0 0;
+
+              a {
+                padding: 8px;
+              }
+            }
+          }
+        }
+
+        &.legal {
+          span {
+            margin-bottom: 15px;
+          }
+
+          flex-direction: column;
+        }
+      }
+    }
+  }
+
+  @media only screen and (max-width: 380px) {
+    footer {
+      div.footerTop {
+        nav {
+          flex-direction: column;
+
+          span {
+            margin-top: 25px;
+          }
+        }
+      }
+    }
+  }
 }

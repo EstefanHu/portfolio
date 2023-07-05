@@ -13,7 +13,9 @@
       align-self: flex-end;
       font-size: 2.5rem;
       margin-bottom: 15px;
-      transition: color 0.2s, text-decoration-color 0.2s;
+      transition:
+        color 0.2s,
+        text-decoration-color 0.2s;
       text-decoration: underline;
       text-decoration-color: transparent;
 
