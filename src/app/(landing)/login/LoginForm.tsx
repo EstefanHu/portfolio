@@ -14,8 +14,7 @@ export default function LoginForm() {
   const [formData, setFormData] = useState(DEFAULT_DATA);
   const [errorData, setErrorData] = useState(DEFAULT_DATA);
 
-  const handleSignIn = async (e) => {
-    console.log({ isLoading });
+  const handleSignIn = async (e: React.FormEvent<HTMLInputElement>) => {
     e.preventDefault();
 
     if (isLoading) return;
