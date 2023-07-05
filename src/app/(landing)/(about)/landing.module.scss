@@ -37,9 +37,13 @@
       position: relative;
     }
 
-    @media only screen and (max-width: 610px) {
+    @media only screen and (max-width: 615px) {
       h1 {
         font-size: 2.5rem;
+      }
+
+      h2 {
+        font-size: 1.2rem;
       }
 
       .imageWrapper {
@@ -52,7 +56,7 @@
       }
     }
 
-    @media only screen and (max-width: 505px) {
+    @media only screen and (max-width: 510px) {
       padding-top: 25px;
       flex-direction: column;
 

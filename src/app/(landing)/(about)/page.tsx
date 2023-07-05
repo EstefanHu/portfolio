@@ -9,7 +9,7 @@ export default function Home() {
           <h1>
             J. <span>Estefan</span> Hu
           </h1>
-          <h2>Web Developer</h2>
+          <h2>Dreamer. Gamer. Developer.</h2>
         </div>
 
         <div className={styles.imageWrapper}>
