@@ -17,14 +17,14 @@ export default function Home() {
             src='/images/me.webp'
             alt='me'
             priority
-            objectFit='cover'
             fill
+            sizes='100%'
           />
         </div>
       </section>
 
       <section>
-        <h3>To make, or not to make</h3>
+        <h3></h3>
       </section>
     </main>
   );
