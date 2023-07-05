@@ -54,7 +54,7 @@ export default function Prjkts() {
         <p className={styles.description}>
           &emsp;As someone who is constantly coming up with ideas for new projects, I&apos;ve been needing a place to
           keep track and validate them. And so, here it is! For those who are curious,&nbsp;
-          <Link href='/blg/how-i-track-ideas' style={{ color: '#dd2d44' }}>
+          <Link href='/blg/how-i-track-ideas' style={{ color: '#940a0a' }}>
             here
           </Link>
           &nbsp;is how I have constructed this personal service.

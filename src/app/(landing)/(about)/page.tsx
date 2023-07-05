@@ -27,6 +27,7 @@ export default function Home() {
         <div>
           <h3>A bit about me</h3>
 
+          <p></p>
         </div>
       </section>
     </main>
