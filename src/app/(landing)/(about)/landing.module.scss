@@ -6,21 +6,60 @@
   margin: var(--headerHeight) auto 0;
   padding: 20px 15px 50px;
 
-  h1 {
-    font-size: 3rem;
-    margin-top: 50px;
-    font-weight: 300;
+  .hero {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 50px;
 
-    span {
-      font-weight: bold;
-      color: var(--accent);
+    h1 {
+      font-size: 3rem;
+      font-weight: 300;
+
+      span {
+        font-weight: bold;
+        color: var(--accent);
+      }
     }
-  }
 
-  h2 {
-    margin-top: 10px;
-    font-size: 1.5rem;
-    margin-bottom: 40vh;
+    h2 {
+      margin-top: 10px;
+      font-size: 1.5rem;
+    }
+
+    .imageWrapper {
+      height: 390px;
+      width: 300px;
+      border-radius: 15px;
+      box-shadow: 2px 2px 15px rgb(0, 0, 0, 0.2);
+      overflow: hidden;
+      position: relative;
+    }
+
+    @media only screen and (max-width: 650px) {
+      h1 {
+        font-size: 2.75rem;
+      }
+
+      .imageWrapper {
+        width: 240px;
+        height: 320px;
+      }
+    }
+
+    @media only screen and (max-width: 525px) {
+      flex-direction: column;
+
+      h2 {
+        margin-bottom: 20px;
+      }
+
+      .imageWrapper {
+        width: 100%;
+        height: 370px;
+        margin-bottom: 30px;
+      }
+    }
   }
 
   section {
