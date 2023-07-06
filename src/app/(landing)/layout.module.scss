@@ -50,7 +50,7 @@
   width: 100%;
   display: flex;
   background-color: var(--layout);
-  padding: 55px 15px 20px;
+  padding: 55px 15px 15px;
 
   footer {
     width: 100%;
@@ -171,13 +171,15 @@
   }
 
   @media only screen and (max-width: 380px) {
+    padding-top: 10px;
+
     footer {
       div.footerTop {
         nav {
           flex-direction: column;
 
           span {
-            margin-top: 25px;
+            margin-top: 20px;
           }
         }
       }

@@ -3,7 +3,7 @@ import { usePathname } from 'next/navigation';
 import Link from 'next/link';
 
 const SELECTED = {
-  color: '#dd2d44',
+  color: '#940a0a',
   textDecoration: 'underline',
 };
 

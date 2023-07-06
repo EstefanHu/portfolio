@@ -6,12 +6,12 @@ const STYLES = {
 };
 
 export default function GoToAppendix({ children }: { children: string }) {
-  const goToAppendix = () => {};
+  const goToAppendix = () => { };
 
   return (
     <button onClick={goToAppendix} style={STYLES}>
       {children}
-      <span style={{ color: '#dd2d44' }}>*</span>
+      <span style={{ color: '#940a0a' }}>*</span>
     </button>
   );
 }

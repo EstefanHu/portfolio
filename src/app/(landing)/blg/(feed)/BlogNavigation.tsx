@@ -4,8 +4,8 @@ import { usePathname } from 'next/navigation';
 import { FaStarOfLife } from 'react-icons/fa';
 
 const SELECTED = {
-  color: '#dd2d44',
-  textDecorationColor: '#dd2d44',
+  color: '#940a0a',
+  textDecorationColor: '#940a0a',
 };
 
 export default function BlogNavigation() {

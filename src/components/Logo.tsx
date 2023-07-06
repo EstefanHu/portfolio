@@ -8,7 +8,7 @@ export default function Logo() {
   return (
     <h1
       style={{
-        color: selected === '' ? '#dd2d44' : '',
+        color: selected === '' ? '#940a0a' : '',
       }}
     >
       E

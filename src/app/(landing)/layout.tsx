@@ -34,7 +34,7 @@ export default function layout({ children }: { children: React.ReactNode }) {
           <div className={styles.footerTop}>
             <div className={styles.branding}>
               <Link href='/'>
-                <p className={styles.name}>estefan</p>
+                <p className={styles.name}>j. estefan hu</p>
               </Link>
               <p>Software Developer</p>
               <p>Seattle, Washington</p>
