@@ -171,13 +171,15 @@
   }
 
   @media only screen and (max-width: 380px) {
+    padding-top: 10px;
+
     footer {
       div.footerTop {
         nav {
           flex-direction: column;
 
           span {
-            margin-top: 25px;
+            margin-top: 20px;
           }
         }
       }
