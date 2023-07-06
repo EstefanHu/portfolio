@@ -19,7 +19,7 @@ export default function Home() {
             alt='me'
             priority
             fill
-            sizes='100vw'
+            sizes='(max-width: 1px) 100vw'
           />
         </div>
       </section>

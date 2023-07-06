@@ -26,18 +26,23 @@
     h2 {
       margin-top: 10px;
       font-size: 1.5rem;
+      margin-right: 30px;
     }
 
     .imageWrapper {
-      height: 390px;
-      width: 300px;
+      flex-grow: 1;
+      height: 480px;
       border-radius: 10px;
       box-shadow: 2px 2px 5px rgb(0, 0, 0, 0.1);
       overflow: hidden;
       position: relative;
+
+      img {
+        object-fit: cover;
+      }
     }
 
-    @media only screen and (max-width: 615px) {
+    @media only screen and (max-width: 670px) {
       h1 {
         font-size: 2.5rem;
       }
@@ -47,12 +52,7 @@
       }
 
       .imageWrapper {
-        width: 240px;
         height: 320px;
-
-        img {
-          object-fit: cover;
-        }
       }
     }
 
