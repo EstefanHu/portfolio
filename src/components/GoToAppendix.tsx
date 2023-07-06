@@ -6,7 +6,7 @@ const STYLES = {
 };
 
 export default function GoToAppendix({ children }: { children: string }) {
-  const goToAppendix = () => { };
+  const goToAppendix = () => {};
 
   return (
     <button onClick={goToAppendix} style={STYLES}>
