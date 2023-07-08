@@ -44,9 +44,9 @@ export default function layout({ children }: { children: React.ReactNode }) {
               <span>
                 <h4>me</h4>
                 <Link href='/'>about</Link>
-                {/* <Link href='/'>resume</Link> */}
-                <Link href='/login'>login</Link>
+                <Link href='/rsm'>resume</Link>
                 <Link href='/contact'>contact</Link>
+                <Link href='/login'>login</Link>
               </span>
 
               <span>
