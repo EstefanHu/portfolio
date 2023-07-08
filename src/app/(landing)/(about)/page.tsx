@@ -19,7 +19,7 @@ export default function Home() {
       </section>
 
       <section className={styles.bio}>
-        <p>A bit about me. I like games. I like coffee. And I like books... Oh, and I like to code!</p>
+        <p>Greetings! I&apos;m <Link target='_blank' rel='noopener noreferrer' href='https://www.linkedin.com/in/estefanhu/'>Estefan</Link> and this is my site.</p>
 
         <p>
           I&apos;ve been making for as long as I can remember. From board games, to stories, to physics theories, and

@@ -15,7 +15,7 @@ export default function layout({ children }: { children: React.ReactNode }) {
         </Link>
 
         <nav>
-          <PageLinks />
+          {/* <PageLinks /> */}
 
           <Link target='_blank' rel='noopener noreferrer' href='https://www.linkedin.com/in/estefanhu/'>
             lnkdn
