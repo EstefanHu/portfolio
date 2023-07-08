@@ -22,8 +22,7 @@ export default function Home() {
         <p>Howdy! My name is <Link target='_blank' rel='noopener noreferrer' href='https://www.linkedin.com/in/estefanhu/'>Estefan</Link> and I am a software developer @ <Link href='/rsm'>[insert company]</Link>.</p>
 
         <p>
-          If you have something to say, or just want to say hi, please contact me{' '}
-          <Link href='/contact?r=bio'>here</Link>.
+          If you would like to reach me, you can find me on <Link target='_blank' rel='noopener noreferrer' href='https://www.linkedin.com/in/estefanhu/'>LinkedIn</Link>, or you can send me a <Link href='/cntct?r=bio'>message</Link>.
         </p>
 
         <p>Best of wishes, and to those who know, happy coding!</p>

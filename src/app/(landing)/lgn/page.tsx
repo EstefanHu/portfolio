@@ -13,7 +13,7 @@ export default function Page() {
       <p className={styles.request}>
         Looking for a behind the scenes access?{' '}
         <span>
-          <Link href='/contact?r=request%20%access'>Request</Link> it!
+          <Link href='/cntct?r=request%20%access'>Request</Link> it!
         </span>
       </p>
     </main>
