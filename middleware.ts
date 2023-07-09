@@ -2,7 +2,7 @@ import { NextResponse } from 'next/server';
 import type { NextRequest } from 'next/server';
 
 export function middleware(req: NextRequest) {
-  //   const authCookie = req.cookies.get('redlineAuth');
+  //   const authCookie = req.cookies.get('portfolioAuth');
   //   const { pathname } = req.nextUrl;
 
   // if (Object.values(appRoutes).includes(pathname)) {
