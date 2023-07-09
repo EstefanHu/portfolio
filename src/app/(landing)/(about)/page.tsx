@@ -1,10 +1,10 @@
 import Image from 'next/image';
 import Link from 'next/link';
-import styles from './landing.module.scss';
+import styles from './about.module.scss';
 
 export default function Home() {
   return (
-    <main className={styles.wrapper}>
+    <div className={styles.wrapper}>
       <section className={styles.hero}>
         <div>
           <h1>
@@ -39,6 +39,6 @@ export default function Home() {
 
         <p>- e.</p>
       </section>
-    </main>
+    </div>
   );
 }

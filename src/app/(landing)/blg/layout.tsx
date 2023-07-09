@@ -5,5 +5,5 @@ const STYLES = {
 };
 
 export default function BlgLayout({ children }: { children: React.ReactNode }) {
-  return <main style={STYLES}>{children}</main>;
+  return <div style={STYLES}>{children}</div>;
 }

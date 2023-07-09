@@ -2,8 +2,10 @@ import { NextResponse } from 'next/server';
 import type { NextRequest } from 'next/server';
 
 export function middleware(req: NextRequest) {
-  //   const authCookie = req.cookies.get('portfolioAuth');
-  //   const { pathname } = req.nextUrl;
+  // const authCookie = req.cookies.get('portfolioAuth');
+  // const { pathname } = req.nextUrl;
+
+  // console.log({ pathname });
 
   // if (Object.values(appRoutes).includes(pathname)) {
   //   if (!authCookie) {
@@ -23,3 +25,7 @@ export function middleware(req: NextRequest) {
 
   return NextResponse.next();
 }
+
+// export const config = {
+//   matcher: ['/dsh', '/nbx', '/prfl', '/wrt']
+// }

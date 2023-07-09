@@ -2,14 +2,14 @@ import Link from 'next/link';
 import { FaGithubSquare, FaLinkedin } from 'react-icons/fa';
 
 import Logo from '@/components/Logo';
-import PageLinks from './PageLinks';
+// import PageLinks from './PageLinks';
 
 import styles from './layout.module.scss';
 
 export default function layout({ children }: { children: React.ReactNode }) {
   return (
-    <>
-      <header className={styles.header}>
+    <main className={styles.main}>
+      <header>
         <Link href='/'>
           <Logo />
         </Link>
@@ -29,8 +29,8 @@ export default function layout({ children }: { children: React.ReactNode }) {
 
       {children}
 
-      <div className={styles.footerWrapper}>
-        <footer>
+      <footer>
+        <div className={styles.footerWrapper}>
           <div className={styles.footerTop}>
             <div className={styles.branding}>
               <Link href='/'>
@@ -74,8 +74,8 @@ export default function layout({ children }: { children: React.ReactNode }) {
 
             <p>&copy; 2023 Justin Estefan Hu - all rights reserved</p>
           </div>
-        </footer>
-      </div>
-    </>
+        </div>
+      </footer>
+    </main>
   );
 }
