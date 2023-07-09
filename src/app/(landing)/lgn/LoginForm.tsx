@@ -1,7 +1,7 @@
 'use client';
 import { useState } from 'react';
 import { useRouter } from 'next/navigation';
-import { ValidateEmailAddress } from '@/lib/validate';
+import { validateEmailAddress } from '@/lib/validateEmailAddress';
 
 const DEFAULT_DATA = {
   emailAddress: '',
@@ -26,7 +26,7 @@ export default function LoginForm() {
     };
 
     if (!emailAddress) errors.emailAddress = 'email is required';
-    if (emailAddress && !ValidateEmailAddress(emailAddress)) errors.emailAddress = 'invalid email';
+    if (emailAddress && !validateEmailAddress(emailAddress)) errors.emailAddress = 'invalid email';
     if (!password) errors.password = 'password is required';
     if (JSON.stringify(errors) !== JSON.stringify(DEFAULT_DATA)) return setErrorData(errors);
 
