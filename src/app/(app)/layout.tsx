@@ -1,8 +1,6 @@
-import Link from 'next/link';
-import Logo from '@/components/Logo';
-
 import styles from './app.module.scss';
 import AppNav from './AppNav';
+import PageName from './PageName';
 
 export default function Layout({ children }: { children: React.ReactNode }) {
   return (
@@ -12,7 +10,9 @@ export default function Layout({ children }: { children: React.ReactNode }) {
       </nav>
 
       <div className={styles.mainWrapper}>
-        <header></header>
+        <header>
+          <PageName />
+        </header>
 
         <main>{children}</main>
       </div>
