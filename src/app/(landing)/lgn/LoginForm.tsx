@@ -1,10 +1,8 @@
 'use client';
 import { useState } from 'react';
 import { useRouter } from 'next/navigation';
-import { validateEmailAddress } from '@/lib/validateEmailAddress';
 
 const DEFAULT_DATA = {
-  emailAddress: '',
   password: '',
 };
 
@@ -19,14 +17,9 @@ export default function LoginForm() {
 
     if (isLoading) return;
     setErrorData(DEFAULT_DATA);
-    const { emailAddress, password } = formData;
-    const errors = {
-      emailAddress: '',
-      password: '',
-    };
+    const { password } = formData;
+    const errors = { password: '' };
 
-    if (!emailAddress) errors.emailAddress = 'email is required';
-    if (emailAddress && !validateEmailAddress(emailAddress)) errors.emailAddress = 'invalid email';
     if (!password) errors.password = 'password is required';
     if (JSON.stringify(errors) !== JSON.stringify(DEFAULT_DATA)) return setErrorData(errors);
 
@@ -43,22 +36,14 @@ export default function LoginForm() {
     ).json();
     setIsLoading(false);
 
-    if (code !== 200) return setErrorData({ emailAddress: message, password: message });
+    if (code !== 200) return setErrorData({ password: message });
 
-    router.push('/home');
+    router.push('/dsh');
   };
 
   return (
     <form noValidate autoComplete='off' onSubmit={handleSignIn}>
       <fieldset>
-        <input
-          type='email'
-          placeholder='email address'
-          value={formData.emailAddress}
-          onChange={(e) => setFormData({ ...formData, emailAddress: e.target.value })}
-        />
-        <p>{errorData.emailAddress}</p>
-
         <input
           type='password'
           placeholder='password'
