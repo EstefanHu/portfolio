@@ -15,7 +15,7 @@ export default function layout({ children }: { children: React.ReactNode }) {
         </Link>
 
         <nav>
-          <PageLinks />
+          {/* <PageLinks /> */}
 
           <Link target='_blank' rel='noopener noreferrer' href='https://www.linkedin.com/in/estefanhu/'>
             lnkdn
@@ -44,9 +44,9 @@ export default function layout({ children }: { children: React.ReactNode }) {
               <span>
                 <h4>me</h4>
                 <Link href='/'>about</Link>
-                {/* <Link href='/'>resume</Link> */}
-                <Link href='/login'>login</Link>
-                <Link href='/contact'>contact</Link>
+                <Link href='/rsm'>resume</Link>
+                <Link href='/cntct'>contact</Link>
+                <Link href='/lgn'>login</Link>
               </span>
 
               <span>
