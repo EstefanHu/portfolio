@@ -18,13 +18,13 @@ const setUserSession = async (redis: Redis, userId: string): Promise<string> => 
 };
 
 export async function POST(request: Request) {
-//   const { emailAddress, password } = await request.json();
-//   if (!emailAddress || !password) return new Response(BAD_REQUEST);
-//   const user = await prisma.user.findUnique({ where: { emailAddress } });
-//   if (!user) return new Response(INVALID_REQUEST);
-//   if (!(await bcrypt.compare(password, user.password))) return new Response(INVALID_REQUEST);
+  const { emailAddress, password } = await request.json();
+  if (!emailAddress || !password) return new Response(BAD_REQUEST);
+  const user = await prisma.user.findUnique({ where: { emailAddress } });
+  if (!user) return new Response(INVALID_REQUEST);
+  if (!(await bcrypt.compare(password, user.password))) return new Response(INVALID_REQUEST);
 
-  const sessionToken = await setUserSession(redis, 'user.id');
+  const sessionToken = await setUserSession(redis, user.id);
 
   return new Response(SUCCESS, {
     headers: {
