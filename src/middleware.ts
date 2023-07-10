@@ -12,8 +12,8 @@ export function middleware(req: NextRequest) {
   }
 
   return NextResponse.next();
-};
+}
 
 export const config = {
-  matcher: ['/dsh', '/nbx', '/prfl', '/wrt']
-}
+  matcher: ['/dsh', '/nbx', '/prfl', '/wrt'],
+};
