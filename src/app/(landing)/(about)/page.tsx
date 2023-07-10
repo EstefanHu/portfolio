@@ -31,7 +31,8 @@ export default function Home() {
           If you would like to reach me, you can find me on{' '}
           <Link target='_blank' rel='noopener noreferrer' href='https://www.linkedin.com/in/estefanhu/'>
             LinkedIn
-          </Link>.
+          </Link>
+          .
         </p>
 
         <p>Best of wishes, and to those who know, happy coding!</p>
