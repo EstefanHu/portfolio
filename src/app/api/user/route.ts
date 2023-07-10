@@ -53,11 +53,11 @@ export async function GET() {
     return new Response(INVALID_REQUEST, {
       headers: { 'Set-Cookie': 'portfolioAuth=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/; Max-Age=0;' },
     });
-  const { id, name, emailAddress, emailConfirmed, imageUrl } = user;
+  const { id, name, emailAddress, emailConfirmed } = user;
 
   const data = {
     ...JSON.parse(SUCCESS),
-    data: { id, name, emailAddress, emailConfirmed, imageUrl },
+    data: { id, name, emailAddress, emailConfirmed },
   };
 
   return new Response(JSON.stringify(data));
