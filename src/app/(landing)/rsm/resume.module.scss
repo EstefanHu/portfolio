@@ -1,0 +1,127 @@
+.main {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 800px;
+    padding: var(--headerHeight) 15px 30px;
+
+    h1 {
+        text-transform: capitalize;
+        font-size: 5rem;
+
+        span {
+            color: var(--accent);
+            font-weight: 600;
+        }
+    }
+
+    .resumeWrapper {
+        display: flex;
+        padding-top: 20px;
+
+        nav {
+            position: sticky;
+            top: 0;
+            display: flex;
+            flex-direction: column;
+            width: 160px;
+            padding: 30px 0 0;
+
+            h2 {
+                margin-bottom: 25px;
+                font-weight: bold;
+                font-size: 1.2rem;
+            }
+
+            .section {
+                margin-bottom: 8px;
+                font-size: 0.8rem;
+                display: flex;
+                flex-direction: column;
+
+                &>a {
+                    font-weight: bold;
+                }
+
+                a {
+                    text-transform: capitalize;
+                    margin-bottom: 7px;
+                    transition: color 0.15s;
+
+                    &:hover {
+                        text-decoration: underline;
+                        color: var(--accent);
+                    }
+                }
+
+                .subLinks {
+                    display: flex;
+                    flex-direction: column;
+                    padding-left: 9px;
+                }
+            }
+        }
+
+        .resume {
+            flex-grow: 1;
+            padding: 10px 5px 30px;
+            display: flex;
+            flex-direction: column;
+
+            section {
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+
+                h3 {
+                    font-size: 1.25rem;
+                    font-weight: bold;
+                    text-transform: capitalize;
+                    margin-bottom: 30px;
+                    color: var(--accent);
+                }
+
+
+                &>div {
+                    display: flex;
+                    flex-direction: column;
+                    margin-bottom: 50px;
+
+                    h4 {
+                        text-transform: capitalize;
+                        font-weight: bold;
+                        font-size: 1.5rem;
+                        margin-bottom: 15px;
+                    }
+
+                    .info {
+                        width: 100%;
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: space-between;
+
+                        span {
+                            display: flex;
+                            flex-direction: column;
+
+                            p {
+                                text-transform: uppercase;
+                                font-size: 0.75rem;
+                                font-weight: 500;
+                            }
+                        }
+
+                        h5 {
+                            text-transform: capitalize;
+                            font-size: 1rem;
+                            font-weight: 600;
+                            margin-bottom: 5px;
+                        }
+                    }
+                }
+            }
+
+        }
+    }
+}
