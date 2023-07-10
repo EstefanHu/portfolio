@@ -6,9 +6,7 @@ export const metadata = {
   description: 'Software Engineer',
   keywords: ['estefan', 'hu', 'dingus'],
   creator: 'Estefan Hu',
-  author: 'Estefan Hu',
-  locale: 'en_US',
-  type: 'website',
+  authors: [{ name: 'Estefan Hu' }],
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {

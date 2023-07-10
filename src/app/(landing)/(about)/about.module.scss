@@ -30,6 +30,7 @@
 
     .imageWrapper {
       flex-grow: 1;
+      max-width: 400px;
       height: 480px;
       border-radius: 10px;
       box-shadow: 2px 2px 5px rgb(0, 0, 0, 0.1);
@@ -68,8 +69,10 @@
       }
 
       .imageWrapper {
+        max-width: 450;
         width: 100%;
         height: 400px;
+        margin: 0 auto;
       }
     }
   }

@@ -1,10 +1,10 @@
 import Image from 'next/image';
 import Link from 'next/link';
-import styles from './landing.module.scss';
+import styles from './about.module.scss';
 
 export default function Home() {
   return (
-    <main className={styles.wrapper}>
+    <div className={styles.wrapper}>
       <section className={styles.hero}>
         <div>
           <h1>
@@ -19,16 +19,26 @@ export default function Home() {
       </section>
 
       <section className={styles.bio}>
-        <p>Howdy! My name is <Link target='_blank' rel='noopener noreferrer' href='https://www.linkedin.com/in/estefanhu/'>Estefan</Link> and I am a software developer @ <Link href='/rsm'>[insert company]</Link>.</p>
+        <p>
+          Howdy! My name is{' '}
+          <Link target='_blank' rel='noopener noreferrer' href='https://www.linkedin.com/in/estefanhu/'>
+            Estefan
+          </Link>{' '}
+          and I am a software developer @ <Link href='/rsm'>[insert company]</Link>.
+        </p>
 
         <p>
-          If you would like to reach me, you can find me on <Link target='_blank' rel='noopener noreferrer' href='https://www.linkedin.com/in/estefanhu/'>LinkedIn</Link>, or you can send me a <Link href='/cntct?r=bio'>message</Link>.
+          If you would like to reach me, you can find me on{' '}
+          <Link target='_blank' rel='noopener noreferrer' href='https://www.linkedin.com/in/estefanhu/'>
+            LinkedIn
+          </Link>
+          , or you can send me a <Link href='/cntct?r=bio'>message</Link>.
         </p>
 
         <p>Best of wishes, and to those who know, happy coding!</p>
 
         <p>- e.</p>
       </section>
-    </main>
+    </div>
   );
 }

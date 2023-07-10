@@ -6,24 +6,34 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "prettier --write . && eslint --fix ."
+    "lint": "prettier --write . && eslint --fix .",
+    "postinstall": "prisma generate"
   },
   "dependencies": {
-    "next": "^13.4.8",
+    "@prisma/client": "^4.16.2",
+    "bcrypt": "^5.1.0",
+    "ioredis": "^5.3.2",
+    "next": "^13.4.9",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "react-icons": "^4.10.1",
-    "sass": "^1.63.6"
+    "sass": "^1.63.6",
+    "uuid": "^9.0.0"
   },
   "devDependencies": {
+    "@types/bcrypt": "^5.0.0",
     "@types/node": "^20.3.3",
     "@types/react": "^18.2.14",
     "@types/react-dom": "^18.2.6",
+    "@types/uuid": "^9.0.2",
+    "@typescript-eslint/eslint-plugin": "^5.56.0",
+    "@typescript-eslint/parser": "^5.56.0",
     "eslint": "^8.44.0",
     "eslint-config-next": "^13.4.8",
     "eslint-config-prettier": "^8.8.0",
-    "eslint-plugin-prettier": "^4.2.1",
+    "eslint-plugin-prettier": "^5.0.0-alpha.2",
     "prettier": "^3.0.0",
+    "prisma": "^4.16.2",
     "typescript": "^5.1.6"
   }
 }
