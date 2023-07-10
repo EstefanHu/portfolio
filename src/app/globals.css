@@ -66,6 +66,10 @@ p {
   color: var(--text);
 }
 
+fieldset {
+  border: none;
+}
+
 .hidden {
   visibility: hidden;
 }

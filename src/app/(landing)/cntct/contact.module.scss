@@ -5,4 +5,14 @@
   width: 100%;
   max-width: 800px;
   padding: var(--headerHeight) 15px 30px;
+
+  form {
+    display: flex;
+    flex-direction: column;
+
+    fieldset {
+      display: flex;
+      flex-direction: column;
+    }
+  }
 }
