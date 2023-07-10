@@ -2,9 +2,9 @@ import { NextResponse } from 'next/server';
 import type { NextRequest } from 'next/server';
 
 // export function middleware(req: NextRequest) {
-  const middleware = (req: NextRequest) => {
+const middleware = (req: NextRequest) => {
   const authCookie = req.cookies.get('portfolioAuth');
-  console.log('WAAAAAAA')
+  console.log('WAAAAAAA');
   const { pathname } = req.nextUrl;
 
   console.log({ pathname });
@@ -26,7 +26,7 @@ import type { NextRequest } from 'next/server';
   // }
 
   return NextResponse.next();
-}
+};
 
 // export const config = {
 //   matcher: ['/dsh', '/nbx', '/prfl', '/wrt']

@@ -38,8 +38,9 @@ export async function POST(request: Request) {
 
   return new Response(SUCCESS, {
     headers: {
-      'Set-Cookie': `portfolioAuth=${generateUUID()}; Max-Age=${process.env.SESSION_TTL
-        }; SameSite=Strict; Path=/; HttpOnly ${process.env.NODE_ENV !== 'development' && '; Secure'}`,
+      'Set-Cookie': `portfolioAuth=${generateUUID()}; Max-Age=${
+        process.env.SESSION_TTL
+      }; SameSite=Strict; Path=/; HttpOnly ${process.env.NODE_ENV !== 'development' && '; Secure'}`,
     },
   });
 }
