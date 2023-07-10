@@ -32,7 +32,7 @@ export default function Home() {
           <Link target='_blank' rel='noopener noreferrer' href='https://www.linkedin.com/in/estefanhu/'>
             LinkedIn
           </Link>
-          , or you can send me a <Link href='/cntct?r=bio'>message</Link>.
+          .
         </p>
 
         <p>Best of wishes, and to those who know, happy coding!</p>

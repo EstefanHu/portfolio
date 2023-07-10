@@ -45,7 +45,6 @@ export default function layout({ children }: { children: React.ReactNode }) {
                 <h4>me</h4>
                 <Link href='/'>about</Link>
                 <Link href='/rsm'>resume</Link>
-                <Link href='/cntct'>contact</Link>
                 <Link href='/lgn'>login</Link>
               </span>
 

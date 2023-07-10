@@ -1,0 +1,9 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+  width: 100vw;
+  max-width: 800px;
+  padding: var(--headerHeight) 15px 30px;
+}
