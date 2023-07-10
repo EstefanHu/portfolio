@@ -81,7 +81,9 @@ export default function Resume() {
             ))}
           </section>
 
-          <section id='skills'></section>
+          <section id='skills'>
+            <h3>skills</h3>
+          </section>
 
           <section id='education'></section>
         </div>
