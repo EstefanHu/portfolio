@@ -69,13 +69,17 @@ export default function Resume() {
                     <p>{location}</p>
                   </span>
 
-                  <h5>{startDate} - {endDate}</h5>
+                  <h5>
+                    {startDate} - {endDate}
+                  </h5>
                 </div>
 
                 <p className={styles.headliner}>{headliner}</p>
 
                 <ul>
-                  {achievements.map((a) => <li>{a}</li>)}
+                  {achievements.map((a) => (
+                    <li key={a}>{a}</li>
+                  ))}
                 </ul>
               </div>
             ))}
