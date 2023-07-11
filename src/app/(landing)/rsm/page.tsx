@@ -36,7 +36,7 @@ export default function Resume() {
             linkedin.com/in/estefanhu
           </Link>
           {` - `}
-          <Link href='/'>
+          <Link target='_blank' rel='noopener noreferrer' href='/'>
             estefanhu.com
           </Link>
         </p>
@@ -70,7 +70,7 @@ export default function Resume() {
             <p></p>
           </section>
 
-          <section id='experience'>
+          <section id='experience' className={styles.experience}>
             <h3>experience</h3>
 
             {experience.map(({ name, title, location, startDate, endDate, headliner, achievements }) => (
