@@ -18,20 +18,16 @@ export default function BlogNavigation() {
         <FaStarOfLife size='20px' />
       </Link>
 
+      <Link style={selected === 'log' ? SELECTED : {}} href='/blg?c=log'>
+        l<span>og</span>
+      </Link>
+
       <Link style={selected === 'algo' ? SELECTED : {}} href='/blg?c=algo'>
         a<span>lgo</span>
       </Link>
 
       <Link style={selected === 'code' ? SELECTED : {}} href='/blg?c=code'>
         c<span>ode</span>
-      </Link>
-
-      <Link style={selected === 'health' ? SELECTED : {}} href='/blg?c=health'>
-        h<span>ealth</span>
-      </Link>
-
-      <Link style={selected === 'urban' ? SELECTED : {}} href='/blg?c=urban'>
-        u<span>rban</span>
       </Link>
     </>
   );

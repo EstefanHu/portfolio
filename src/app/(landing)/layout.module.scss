@@ -57,10 +57,10 @@
     width: 100%;
     display: flex;
     background-color: var(--layout);
-    padding: 55px 15px 15px;
     margin-top: auto;
 
     .footerWrapper {
+      padding: 55px 15px 15px;
       width: 100%;
       max-width: 800px;
       margin: 0 auto;
@@ -147,7 +147,7 @@
     }
 
     @media only screen and (max-width: 550px) {
-      footer {
+      .footerWrapper {
         div {
           &.footerTop {
             flex-direction: column-reverse;
@@ -181,7 +181,7 @@
     @media only screen and (max-width: 380px) {
       padding-top: 10px;
 
-      footer {
+      .footerWrapper {
         div.footerTop {
           nav {
             flex-direction: column;

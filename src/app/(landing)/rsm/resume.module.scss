@@ -182,16 +182,18 @@
             line-height: 25px;
           }
         }
-      }
 
-      .technology {
-        p {
-          margin-bottom: 18px;
-          line-height: 22px;
+        &.technology {
+          margin-bottom: 25px;
 
-          span {
-            font-weight: bold;
-            text-transform: capitalize;
+          p {
+            margin-bottom: 18px;
+            line-height: 22px;
+
+            span {
+              font-weight: bold;
+              text-transform: capitalize;
+            }
           }
         }
       }
