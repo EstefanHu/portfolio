@@ -1,0 +1,210 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 800px;
+  padding: var(--headerHeight) 15px 30px;
+
+  .header {
+    padding: 50px 0 100px;
+    text-align: right;
+
+    h1 {
+      text-transform: capitalize;
+      font-size: 5rem;
+      margin-bottom: 10px;
+
+      span {
+        color: var(--accent);
+        font-weight: 600;
+      }
+    }
+
+    p {
+      color: var(--text);
+      font-size: 1.1rem;
+      transform: color 0.2s;
+      line-height: 25px;
+
+      &:hover {
+        color: var(--accent);
+      }
+    }
+
+    @media only screen and (max-width: 600px) {
+      padding-bottom: 30px;
+
+      p {
+        font-size: 1rem;
+      }
+    }
+
+    @media only screen and (max-width: 500px) {
+      padding-top: 20px;
+
+      h1 {
+        font-size: 3rem;
+        margin-bottom: 5px;
+      }
+    }
+  }
+
+  .resumeWrapper {
+    display: flex;
+    position: relative;
+
+    nav {
+      position: sticky;
+      top: calc(var(--headerHeight) + 20px);
+      display: flex;
+      flex-direction: column;
+      width: 160px;
+      height: fit-content;
+
+      h2 {
+        margin-bottom: 25px;
+        font-weight: bold;
+        font-size: 1.2rem;
+      }
+
+      .section {
+        margin-bottom: 8px;
+        font-size: 0.8rem;
+        display: flex;
+        flex-direction: column;
+
+        & > a {
+          font-weight: bold;
+        }
+
+        a {
+          text-transform: capitalize;
+          margin-bottom: 10px;
+          transition: color 0.15s;
+
+          &:hover {
+            text-decoration: underline;
+            color: var(--accent);
+          }
+        }
+
+        .subLinks {
+          display: flex;
+          flex-direction: column;
+          padding-left: 9px;
+        }
+      }
+    }
+
+    .resume {
+      flex-grow: 1;
+      padding: 0px 5px 30px;
+      display: flex;
+      flex-direction: column;
+
+      section {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+
+        h3 {
+          font-size: 1.25rem;
+          font-weight: bold;
+          text-transform: capitalize;
+          margin-bottom: 30px;
+          color: var(--accent);
+        }
+
+        &.experience {
+          display: flex;
+          flex-direction: column;
+
+          & > div {
+            margin-bottom: 50px;
+          }
+
+          h4 {
+            text-transform: capitalize;
+            font-weight: bold;
+            font-size: 1.5rem;
+            margin-bottom: 15px;
+          }
+
+          .info {
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            margin-bottom: 15px;
+
+            span {
+              display: flex;
+              flex-direction: column;
+
+              p {
+                text-transform: uppercase;
+                font-size: 0.75rem;
+                font-weight: 500;
+              }
+            }
+
+            h5 {
+              text-transform: capitalize;
+              font-size: 1rem;
+              font-weight: 600;
+              margin-bottom: 5px;
+            }
+
+            @media only screen and (max-width: 375px) {
+              flex-direction: column;
+
+              span {
+                margin-bottom: 7px;
+              }
+
+              h5 {
+                font-weight: 500;
+              }
+            }
+          }
+
+          .headliner {
+            margin-bottom: 20px;
+            border-left: 2px solid var(--accent);
+            padding: 10px 0px 15px 20px;
+            font-size: 1.1rem;
+            line-height: 30px;
+          }
+
+          ul {
+            margin-left: 20px;
+            line-height: 25px;
+          }
+        }
+      }
+
+      .technology {
+        p {
+          margin-bottom: 18px;
+          line-height: 22px;
+
+          span {
+            font-weight: bold;
+            text-transform: capitalize;
+          }
+        }
+      }
+    }
+
+    @media only screen and (max-width: 600px) {
+      flex-direction: column;
+
+      nav {
+        position: relative;
+        top: 0;
+        margin-bottom: 20px;
+      }
+    }
+  }
+}
