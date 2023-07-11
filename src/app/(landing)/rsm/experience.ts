@@ -6,8 +6,7 @@ const experience = [
     startDate: 'nov 2021',
     endDate: 'jul 2023',
     headliner: '',
-    achievements: [
-    ],
+    achievements: [],
   },
   {
     name: 'realty simple',
