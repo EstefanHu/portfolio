@@ -5,7 +5,8 @@ const experience = [
     location: 'seattle, wa - remote',
     startDate: 'nov 2021',
     endDate: 'jul 2023',
-    headliner: 'Managed and led development of data capabilities hub, which established new standards for both Scientists and Engineers to collaborate on business critical deliverables.',
+    headliner:
+      'Managed and led development of data capabilities hub, which established new standards for both Scientists and Engineers to collaborate on business critical deliverables.',
     achievements: [
       'Designed and delivered complete python infrastructure for the Data Science and Analytics team. Enabling both Scientists and Engineers to collaborate on business critical deliverables.',
       'Spearheaded development of multiple microservices across multiple teams, assuring ACIDity with our RESTful and GraphQL distributed systems.',

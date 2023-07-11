@@ -66,11 +66,20 @@ export default function Resume() {
 
         <div className={styles.resume}>
           <section id='status' className={styles.status}>
-            <h3>status <span>open for hire</span></h3>
+            <h3>
+              status <span>open for hire</span>
+            </h3>
 
-            <p>I&apos;m unemployed! Having been affected by the recent tech layoffs I&apos;ve decided to take some time, build some projects and learn a few technologies that I&apos;ve had queued up for some time now.</p>
+            <p>
+              I&apos;m unemployed! Having been affected by the recent tech layoffs I&apos;ve decided to take some time,
+              build some projects and learn a few technologies that I&apos;ve had queued up for some time now.
+            </p>
 
-            {status.map(({ q, a }) => <p><b>{q}?</b> {a}</p>)}
+            {status.map(({ q, a }) => (
+              <p key={q}>
+                <b>{q}?</b> {a}
+              </p>
+            ))}
           </section>
 
           <section id='experience' className={styles.experience}>
