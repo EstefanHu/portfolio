@@ -2,7 +2,9 @@
   display: flex;
   justify-content: space-between;
   width: 100%;
+  max-width: 800px;
   padding: 20px 30px 50px;
+  margin: 0 auto;
 
   nav {
     display: flex;

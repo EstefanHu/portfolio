@@ -13,7 +13,6 @@ const NAV_LINKS = [
   },
   {
     primary: 'technology',
-    links: ['languages', 'tools', 'databases', 'cloud services', 'devops'],
   },
   {
     primary: 'education',
@@ -110,7 +109,9 @@ export default function Resume() {
             ))}
           </section>
 
-          <section id='education'></section>
+          <section id='education'>
+            <h3>education</h3>
+          </section>
         </div>
       </div>
     </div>
