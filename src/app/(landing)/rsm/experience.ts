@@ -5,9 +5,8 @@ const experience = [
     location: 'seattle, wa - remote',
     startDate: 'nov 2021',
     endDate: 'jul 2023',
-    headliner: 'Led development team ',
+    headliner: '',
     achievements: [
-      'Collaborated with Data Scientists and led development on Data Capabilities Hub.',
     ],
   },
   {

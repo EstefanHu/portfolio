@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import experience from './experience';
+import technology from './technology'
 import styles from './resume.module.scss';
 
 const NAV_LINKS = [
@@ -11,8 +12,8 @@ const NAV_LINKS = [
     links: ['goodway group', 'realty simple', 'muse'],
   },
   {
-    primary: 'skills',
-    links: ['languages', 'tooling', 'devops'],
+    primary: 'technology',
+    links: ['languages', 'tools', 'databases', 'cloud services', 'devops'],
   },
   {
     primary: 'education',
@@ -99,8 +100,10 @@ export default function Resume() {
             ))}
           </section>
 
-          <section id='skills'>
-            <h3>skills</h3>
+          <section id='technology' className={styles.technology}>
+            <h3>technology</h3>
+
+            {technology.map(({ category, items }) => (<p><span>{category}:</span> {items.join(', ')}</p>))}
           </section>
 
           <section id='education'></section>

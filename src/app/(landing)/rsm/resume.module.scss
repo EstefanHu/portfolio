@@ -80,7 +80,7 @@
 
         a {
           text-transform: capitalize;
-          margin-bottom: 7px;
+          margin-bottom: 10px;
           transition: color 0.15s;
 
           &:hover {
@@ -180,6 +180,18 @@
           ul {
             margin-left: 20px;
             line-height: 25px;
+          }
+        }
+      }
+
+      .technology {
+        p {
+          margin-bottom: 18px;
+          line-height: 22px;
+
+          span {
+            font-weight: bold;
+            text-transform: capitalize;
           }
         }
       }
