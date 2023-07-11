@@ -1,6 +1,7 @@
 import Link from 'next/link';
-import experience from './experience';
-import technology from './technology';
+import status from './_status';
+import experience from './_experience';
+import technology from './_technology';
 import styles from './resume.module.scss';
 
 const NAV_LINKS = [
@@ -64,10 +65,21 @@ export default function Resume() {
         </nav>
 
         <div className={styles.resume}>
-          <section id='status'>
-            <h3>status</h3>
+          <section id='status' className={styles.status}>
+            <h3>
+              status <span>open for hire</span>
+            </h3>
 
-            <p></p>
+            <p>
+              I&apos;m unemployed! Having been affected by the recent tech layoffs I&apos;ve decided to take some time,
+              build some projects and learn a few technologies that I&apos;ve had queued up for some time now.
+            </p>
+
+            {status.map(({ q, a }) => (
+              <p key={q}>
+                <b>{q}?</b> {a}
+              </p>
+            ))}
           </section>
 
           <section id='experience' className={styles.experience}>
