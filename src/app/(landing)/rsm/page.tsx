@@ -26,6 +26,20 @@ export default function Resume() {
         <h1>
           j. <span>estefan</span> hu
         </h1>
+
+        <p>
+          <Link target='_blank' rel='noopener noreferrer' href='https://github.com/estefanhu/'>
+            github.com/estefanhu
+          </Link>
+          {` - `}
+          <Link target='_blank' rel='noopener noreferrer' href='https://www.linkedin.com/in/estefanhu/'>
+            linkedin.com/in/estefanhu
+          </Link>
+          {` - `}
+          <Link href='/'>
+            estefanhu.com
+          </Link>
+        </p>
       </div>
 
       <div className={styles.resumeWrapper}>

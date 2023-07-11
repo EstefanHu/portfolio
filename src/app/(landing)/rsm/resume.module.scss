@@ -6,27 +6,57 @@
   max-width: 800px;
   padding: var(--headerHeight) 15px 30px;
 
-  h1 {
-    text-transform: capitalize;
-    font-size: 5rem;
+  .header {
+    padding: 50px 0 100px;
+    text-align: right;
 
-    span {
-      color: var(--accent);
-      font-weight: 600;
+    h1 {
+      text-transform: capitalize;
+      font-size: 5rem;
+      margin-bottom: 10px;
+
+      span {
+        color: var(--accent);
+        font-weight: 600;
+      }
+    }
+
+    p {
+      color: var(--text);
+      font-size: 1.1rem;
+      transform: color 0.2s;
+      line-height: 25px;
+
+      &:hover {
+        color: var(--accent);
+      }
+    }
+
+    @media only screen and (max-width: 500px) {
+      padding: 20px 0 50px;
+
+      h1 {
+        font-size: 3rem;
+        margin-bottom: 5px;
+      }
+
+      p {
+        font-size: 1rem;
+      }
     }
   }
 
   .resumeWrapper {
     display: flex;
-    padding-top: 20px;
+    position: relative;
 
     nav {
       position: sticky;
-      top: 0;
+      top: var(--headerHeight);
       display: flex;
       flex-direction: column;
       width: 160px;
-      padding: 30px 0 0;
+      height: fit-content;
 
       h2 {
         margin-bottom: 25px;
@@ -40,7 +70,7 @@
         display: flex;
         flex-direction: column;
 
-        & > a {
+        &>a {
           font-weight: bold;
         }
 
@@ -65,7 +95,7 @@
 
     .resume {
       flex-grow: 1;
-      padding: 10px 5px 30px;
+      padding: 0px 5px 30px;
       display: flex;
       flex-direction: column;
 
@@ -82,7 +112,7 @@
           color: var(--accent);
         }
 
-        & > div {
+        &>div {
           display: flex;
           flex-direction: column;
           margin-bottom: 50px;
