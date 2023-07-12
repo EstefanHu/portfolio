@@ -1,6 +1,8 @@
-import styles from './app.module.scss';
+import Link from 'next/link';
 import AppNav from './AppNav';
 import PageName from './PageName';
+
+import styles from './app.module.scss';
 
 export default function Layout({ children }: { children: React.ReactNode }) {
   return (
@@ -12,6 +14,10 @@ export default function Layout({ children }: { children: React.ReactNode }) {
       <div className={styles.mainWrapper}>
         <header>
           <PageName />
+
+          <span>
+            <Link href='/'>lndng</Link>
+          </span>
         </header>
 
         <main>{children}</main>

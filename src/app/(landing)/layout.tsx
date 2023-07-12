@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import { cookies } from 'next/headers';
 import { FaGithubSquare, FaLinkedin } from 'react-icons/fa';
 
 import Logo from '@/components/Logo';
@@ -7,6 +8,8 @@ import PageLinks from './PageLinks';
 import styles from './layout.module.scss';
 
 export default function layout({ children }: { children: React.ReactNode }) {
+  const cookieStore = cookies();
+
   return (
     <main className={styles.main}>
       <header>
@@ -24,6 +27,8 @@ export default function layout({ children }: { children: React.ReactNode }) {
           <Link target='_blank' rel='noopener noreferrer' href='https://github.com/estefanhu/'>
             gthb
           </Link>
+
+          {cookieStore.has('portfolioAuth') ? <Link href='/dsh'>app</Link> : null}
         </nav>
       </header>
 
@@ -51,11 +56,15 @@ export default function layout({ children }: { children: React.ReactNode }) {
               <span>
                 <h4>blog</h4>
                 <Link href='/blg'>blog</Link>
+                <Link href='/blg?c=code'>code</Link>
+                <Link href='/blg?c=algo'>algorithm</Link>
+                <Link href='/blg?c=etc'>etc</Link>
               </span>
 
               <span>
                 <h4>projects</h4>
                 <Link href='/prjkts'>projects</Link>
+                <Link href='/prjkts/logs'>dev logs</Link>
               </span>
             </nav>
           </div>

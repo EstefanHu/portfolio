@@ -1,9 +1,11 @@
-// import Link from 'next/link';
+import { cookies } from 'next/headers';
 import LoginForm from './LoginForm';
 
 import styles from './login.module.scss';
 
 export default function Page() {
+  const cookieStore = cookies();
+
   return (
     <div className={styles.page}>
       <h1>Login.</h1>
