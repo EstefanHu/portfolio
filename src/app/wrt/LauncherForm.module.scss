@@ -1,0 +1,87 @@
+$darkRed: #810000;
+
+.launchEntryForm {
+  width: 100%;
+
+  fieldset {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+
+    label {
+      font-size: 0.7rem;
+      font-weight: bold;
+      margin: 0 0 4px 6px;
+      text-transform: uppercase;
+    }
+
+    input {
+      outline: none;
+      width: 100%;
+      height: 40px;
+      border: 1px solid rgb(200, 200, 200);
+      padding: 8.5px 14px;
+      border-radius: 5px;
+      transition: border-color 0.1s;
+      margin-bottom: 4px;
+
+      &:hover {
+        border-color: grey;
+      }
+
+      &:focus {
+        border: 2px solid var(--accent);
+        padding: 8.5px 13px;
+      }
+    }
+
+    .error {
+      color: var(--accent);
+      margin-bottom: 15px;
+      font-size: 0.8rem;
+      margin-left: 10px;
+    }
+
+    span {
+      display: flex;
+      flex-wrap: wrap;
+      margin-bottom: 4px;
+
+      button {
+        font-size: 1rem;
+        font-weight: 500;
+        background-color: #eee;
+        border-radius: 20px;
+        padding: 6px 14px;
+        margin: 3px 4px;
+        transition:
+          background-color 0.2s,
+          color 0.2s;
+        cursor: pointer;
+
+        &.selected {
+          background-color: var(--accent);
+          color: white;
+        }
+      }
+    }
+  }
+
+  button[type='submit'] {
+    width: 100%;
+    height: 35px;
+    background-color: var(--accent);
+    border: 2px solid var(--accent);
+    border-radius: 4px;
+    color: white;
+    cursor: pointer;
+    text-transform: capitalize;
+    font-weight: bold;
+    font-size: 0.9rem;
+    transition: background-color 0.2s;
+
+    &:hover {
+      background-color: $darkRed;
+    }
+  }
+}
