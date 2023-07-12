@@ -21,9 +21,10 @@ const experience = [
     location: 'seattle, wa - remote',
     startDate: 'apr 2020',
     endDate: 'oct 2021',
-    headliner: 'Designed, developed, and delivered multiple apps and services, working closely with designers, stakeholders, and end users to ship high velocity and battle tested solutions.',
+    headliner:
+      'Designed, developed, and delivered multiple apps and services, working closely with designers, stakeholders, and end users to ship high velocity and battle tested solutions.',
     achievements: [
-      'Architected and shipped solutions that interfaced with multiple API\'s, such as Mapbox, MLS, and OAuth.',
+      "Architected and shipped solutions that interfaced with multiple API's, such as Mapbox, MLS, and OAuth.",
       'Lead Development of backends services, testing and continuously deploying microservices and lambdas.',
       'Designed and implemented caching infrastructure with Redis and Golang.',
       'Collaborated with designers to ship multi page marketing website with React.',
@@ -36,16 +37,17 @@ const experience = [
     location: 'seattle, wa',
     startDate: 'jan 2019',
     endDate: 'jan 2020',
-    headliner: '',
+    headliner: 'Co-founded and managed technical functions of Angel funded University of Washington startup.',
     achievements: [],
   },
   {
     name: 'freelance',
-    title: 'web developer',
+    title: 'software developer',
     location: 'seattle, wa',
     startDate: 'aug 2018',
     endDate: 'jan 2019',
-    headliner: 'Worked on diverse problem sets creating custom solutions for an array of stakeholders. Shipping services in Java, C#, Node, Python, and Golang.',
+    headliner:
+      'Worked on diverse problem sets creating custom solutions for an array of stakeholders. Shipping in Java, C#, Node, Python, Swift, and Golang.',
     achievements: [],
   },
 ];

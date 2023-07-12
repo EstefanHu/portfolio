@@ -5,19 +5,14 @@ import technology from './_technology';
 import styles from './resume.module.scss';
 
 const NAV_LINKS = [
-  {
-    primary: 'status',
-  },
+  { primary: 'status' },
   {
     primary: 'experience',
     links: ['goodway group', 'realty simple', 'muse'],
   },
-  {
-    primary: 'technology',
-  },
-  {
-    primary: 'education',
-  },
+  { primary: 'skills' },
+  { primary: 'technology' },
+  { primary: 'education' },
 ];
 
 export default function Resume() {
@@ -119,6 +114,10 @@ export default function Resume() {
                 <span>{category}:</span> {items.join(', ')}
               </p>
             ))}
+          </section>
+
+          <section id='skills' className={styles.skills}>
+            <h3>skills</h3>
           </section>
 
           <section id='education'>
