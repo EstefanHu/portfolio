@@ -21,8 +21,14 @@ const experience = [
     location: 'seattle, wa - remote',
     startDate: 'apr 2020',
     endDate: 'oct 2021',
-    headliner: '',
-    achievements: [],
+    headliner: 'Designed, developed, and delivered multiple apps and services, working closely with designers, stakeholders, and end users to ship high velocity and battle tested solutions.',
+    achievements: [
+      'Architected and shipped solutions that interfaced with multiple API\'s, such as Mapbox, MLS, and OAuth.',
+      'Lead Development of backends services, testing and continuously deploying microservices and lambdas.',
+      'Designed and implemented caching infrastructure with Redis and Golang.',
+      'Collaborated with designers to ship multi page marketing website with React.',
+      'Ran User Research and managed stakeholder expectations using figma, trello and slack.',
+    ],
   },
   {
     name: 'muse',
@@ -39,7 +45,7 @@ const experience = [
     location: 'seattle, wa',
     startDate: 'aug 2018',
     endDate: 'jan 2019',
-    headliner: '',
+    headliner: 'Worked on diverse problem sets creating custom solutions for an array of stakeholders. Shipping services in Java, C#, Node, Python, and Golang.',
     achievements: [],
   },
 ];
