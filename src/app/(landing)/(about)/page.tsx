@@ -27,6 +27,10 @@ export default function Home() {
           and I am a software developer @ <Link href='/rsm'>[insert company]</Link>.
         </p>
 
+        <p>I love stories. Epics, tales, folklore all work together to define the world that we navigate everyday. Software, as I see it, is the apotheosis of storytelling, and, as such, developers are storytellers. I think that&apos;s why I love coding so much, I become an alchemist, weaving data, bits, and pixels, to guide people, users, voyagers, down a fantasy of connection and computation. The power to define reality, for the betterment, or the very least entertainment, of others is what excites me so much about this engineering and is why I just can&apos;t stop coding.</p>
+
+        <p>So what am I working on right now? Who knows! But you can check out my <Link href='/blg'>blog</Link> to see what I&apos;m writing about.</p>
+
         <p>
           If you would like to reach me, you can find me on{' '}
           <Link target='_blank' rel='noopener noreferrer' href='https://www.linkedin.com/in/estefanhu/'>
