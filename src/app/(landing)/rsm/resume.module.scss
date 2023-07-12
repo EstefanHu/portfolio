@@ -7,7 +7,7 @@
   padding: var(--headerHeight) 15px 30px;
 
   .header {
-    padding: 50px 0 100px;
+    padding: 50px 0 70px;
     text-align: right;
 
     h1 {
@@ -219,6 +219,34 @@
             span {
               font-weight: bold;
               text-transform: capitalize;
+            }
+          }
+        }
+
+        &.skills {
+          li {
+            line-height: 25px;
+            margin-left: 20px;
+            font-size: 1rem;
+          }
+        }
+
+        &.education {
+          display: flex;
+          flex-direction: column;
+
+          .learn {
+            display: flex;
+            flex-direction: column;
+
+            h4 {
+              margin-bottom: 10px;
+              font-weight: bold;
+              font-size: 1.1rem;
+            }
+
+            p {
+              font-weight: 1rem;
             }
           }
         }

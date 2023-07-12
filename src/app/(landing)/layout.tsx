@@ -2,7 +2,7 @@ import Link from 'next/link';
 import { FaGithubSquare, FaLinkedin } from 'react-icons/fa';
 
 import Logo from '@/components/Logo';
-// import PageLinks from './PageLinks';
+import PageLinks from './PageLinks';
 
 import styles from './layout.module.scss';
 
@@ -15,7 +15,7 @@ export default function layout({ children }: { children: React.ReactNode }) {
         </Link>
 
         <nav>
-          {/* <PageLinks /> */}
+          <PageLinks />
 
           <Link target='_blank' rel='noopener noreferrer' href='https://www.linkedin.com/in/estefanhu/'>
             lnkdn
