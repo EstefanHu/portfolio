@@ -1,6 +1,6 @@
 'use client';
 import Link from 'next/link';
-import { usePathname } from 'next/navigation';
+import { useSearchParams } from 'next/navigation';
 import { FaStarOfLife } from 'react-icons/fa';
 
 const SELECTED = {
@@ -9,17 +9,13 @@ const SELECTED = {
 };
 
 export default function BlogNavigation() {
-  const pathname = usePathname();
-  const selected = pathname.split('c=')[1];
+  const params = useSearchParams();
+  const selected = params.get('c');
 
   return (
     <>
       <Link style={!selected ? SELECTED : {}} href='/blg'>
         <FaStarOfLife size='20px' />
-      </Link>
-
-      <Link style={selected === 'log' ? SELECTED : {}} href='/blg?c=log'>
-        l<span>og</span>
       </Link>
 
       <Link style={selected === 'algo' ? SELECTED : {}} href='/blg?c=algo'>
@@ -28,6 +24,10 @@ export default function BlogNavigation() {
 
       <Link style={selected === 'code' ? SELECTED : {}} href='/blg?c=code'>
         c<span>ode</span>
+      </Link>
+
+      <Link style={selected === 'etc' ? SELECTED : {}} href='/blg?c=etc'>
+        e<span>tc</span>
       </Link>
     </>
   );
