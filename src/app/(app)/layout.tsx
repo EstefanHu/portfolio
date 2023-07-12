@@ -17,6 +17,10 @@ export default function Layout({ children }: { children: React.ReactNode }) {
 
           <span>
             <Link href='/'>lndng</Link>
+
+            <Link href='/wrt' className={styles.write}>
+              write
+            </Link>
           </span>
         </header>
 

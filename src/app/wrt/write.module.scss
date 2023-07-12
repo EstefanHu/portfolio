@@ -1,0 +1,24 @@
+.write {
+  width: 100%;
+
+  header {
+    height: 60px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: var(--layout);
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    a {
+      width: fit-content;
+      font-size: 1.5rem;
+      font-weight: bold;
+      cursor: pointer;
+      color: var(--text);
+    }
+  }
+}
