@@ -8,8 +8,7 @@ import PageLinks from './PageLinks';
 import styles from './layout.module.scss';
 
 export default function layout({ children }: { children: React.ReactNode }) {
-  const cookieStore = cookies()
-
+  const cookieStore = cookies();
 
   return (
     <main className={styles.main}>

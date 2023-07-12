@@ -1,13 +1,10 @@
-// import Link from 'next/link';
-import { cookies} from 'next/headers';
+import { cookies } from 'next/headers';
 import LoginForm from './LoginForm';
 
 import styles from './login.module.scss';
 
 export default function Page() {
   const cookieStore = cookies();
-
-  // if (cookieStore.has('portfolioAuth')) 
 
   return (
     <div className={styles.page}>
