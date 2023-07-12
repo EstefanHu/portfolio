@@ -13,11 +13,14 @@ export default function PageLinks() {
 
   return (
     <>
-      <Link style={selected === 'blg' ? SELECTED : {}} href='/blg'>
+      {/* <Link style={selected === 'blg' ? SELECTED : {}} href='/blg'>
         blg
       </Link>
       <Link style={selected === 'prjkts' ? SELECTED : {}} href='/prjkts'>
         prjkts
+      </Link> */}
+      <Link style={selected === 'rsm' ? SELECTED : {}} href='/rsm'>
+        rsm
       </Link>
     </>
   );

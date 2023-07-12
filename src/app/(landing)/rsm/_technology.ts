@@ -13,8 +13,12 @@ const technology = [
   },
   {
     category: 'cloud services',
-    items: ['aws', 'vercel', 'heroku', 'firebase', 'railway'],
+    items: ['AWS', 'Vercel', 'Heroku', 'Firebase', 'Railway'],
   },
+  {
+    category: 'devOps',
+    items: ['Docker', 'Kubernetes', 'Linux', 'Git', 'Github', 'CirclCI', 'Shell']
+  }
 ];
 
 export default technology;
