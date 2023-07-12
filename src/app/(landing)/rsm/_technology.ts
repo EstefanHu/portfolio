@@ -17,8 +17,8 @@ const technology = [
   },
   {
     category: 'devOps',
-    items: ['Docker', 'Kubernetes', 'Linux', 'Git', 'Github', 'CirclCI', 'Shell']
-  }
+    items: ['Docker', 'Kubernetes', 'Linux', 'Git', 'Github', 'CirclCI', 'Shell'],
+  },
 ];
 
 export default technology;

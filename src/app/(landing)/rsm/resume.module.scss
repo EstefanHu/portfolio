@@ -76,7 +76,7 @@
         display: flex;
         flex-direction: column;
 
-        &>a {
+        & > a {
           font-weight: bold;
         }
 
@@ -144,7 +144,7 @@
           display: flex;
           flex-direction: column;
 
-          &>div {
+          & > div {
             margin-bottom: 50px;
           }
 
@@ -234,7 +234,6 @@
         &.education {
           display: flex;
           flex-direction: column;
-
 
           .learn {
             display: flex;

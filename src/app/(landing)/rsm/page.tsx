@@ -3,7 +3,7 @@ import status from './_status';
 import experience from './_experience';
 import technology from './_technology';
 import skills from './_skills';
-import education from './_education'
+import education from './_education';
 import styles from './resume.module.scss';
 
 const NAV_LINKS = [
@@ -121,7 +121,9 @@ export default function Resume() {
           <section id='skills' className={styles.skills}>
             <h3>skills</h3>
 
-            {skills.map((skill) => (<li key={skill}>{skill}</li>))}
+            {skills.map((skill) => (
+              <li key={skill}>{skill}</li>
+            ))}
           </section>
 
           <section id='education' className={styles.education}>
