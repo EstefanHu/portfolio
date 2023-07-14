@@ -55,6 +55,7 @@ export default function Posts() {
 
                   <div className={styles.imageWrapper}>
                     <BlogImg name={`${url}-small`} />
+                    <p>{description}</p>
                   </div>
                 </div>
               </div>

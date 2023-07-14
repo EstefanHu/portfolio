@@ -1,4 +1,5 @@
 'use client';
+import { Fragment } from 'react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 
@@ -13,12 +14,10 @@ export default function BreadCrumbs() {
         if (c === '' || idx === lastIndex) return;
 
         return (
-          <>
-            <Link key={idx} href={`/${c}`}>
-              {c}
-            </Link>
-            <p key={`${idx}>`}>&gt;</p>
-          </>
+          <Fragment key={idx}>
+            <Link href={`/${c}`}>{c}</Link>
+            <p>&gt;</p>
+          </Fragment>
         );
       })}
       <p>{crumbs[lastIndex].replace(/\-/g, ' ')}</p>
