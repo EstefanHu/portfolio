@@ -9,7 +9,7 @@ const status = [
   },
   {
     q: 'Where am I located',
-    a: "The rainy and beautiful Seattle, Washington.",
+    a: 'The rainy and beautiful Seattle, Washington.',
   },
 ];
 
