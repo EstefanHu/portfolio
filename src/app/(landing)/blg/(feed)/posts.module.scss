@@ -34,16 +34,32 @@
     }
   }
 
-  h1 {
-    font-weight: 600;
-    font-size: 1.7rem;
-    margin-bottom: 20px;
-  }
+  .body {
+    display: flex;
 
-  & > p {
-    font-size: 1rem;
-    margin-bottom: 0px;
-    line-height: 25px;
+    .details {
+      flex-grow: 1;
+      margin-right: 15px;
+
+      h1 {
+        font-weight: 600;
+        font-size: 1.7rem;
+        margin-bottom: 20px;
+      }
+
+      p {
+        font-size: 1rem;
+        margin-bottom: 0px;
+        line-height: 25px;
+      }
+    }
+
+    .imageWrapper {
+      position: relative;
+      min-width: 200px;
+      max-width: 200px;
+      height: 130px;
+    }
   }
 
   @media screen and (max-width: 750px) {
@@ -58,6 +74,11 @@
       font-size: 1.3rem;
       line-height: 25px;
       margin-bottom: 10px;
+    }
+
+    .imageWrapper {
+      max-width: 100px;
+      min-width: 100px;
     }
   }
 

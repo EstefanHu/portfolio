@@ -3,6 +3,25 @@
   flex-direction: column;
   width: 100vw;
 
+  .bread {
+    display: flex;
+    align-items: center;
+    width: 100vw;
+    max-width: 800px;
+    margin: 20px auto 0;
+
+    & > * {
+      margin-right: 5px;
+      text-transform: uppercase;
+      font-weight: bold;
+      font-size: 0.8rem;
+    }
+
+    a {
+      color: var(--accent);
+    }
+  }
+
   .blog {
     display: flex;
     flex-direction: column;
@@ -23,7 +42,7 @@
       font-size: 1.35rem;
       font-weight: 300;
       margin-bottom: 20px;
-      line-height: 24px;
+      line-height: 26px;
       color: var(--textSecondary);
     }
 

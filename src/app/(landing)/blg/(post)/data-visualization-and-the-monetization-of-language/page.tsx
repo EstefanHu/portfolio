@@ -1,8 +1,14 @@
+import BlogImg from '@/components/BlogImg';
+
 export default function page() {
   return (
     <>
       <h1>Data Visualization and the Monetization of Language</h1>
-      <h2></h2>
+      <h2>
+        A speculative take on the future of iconography and what it means for the internet, BI, and the world at large.
+      </h2>
+
+      <BlogImg name='data-visualization-and-the-monetization-of-language' primary={true} />
 
       <p>The future of data visualization is standardization.</p>
 

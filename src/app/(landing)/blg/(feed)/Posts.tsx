@@ -5,6 +5,7 @@ import { useSearchParams } from 'next/navigation';
 import _posts from './_posts';
 
 import styles from './posts.module.scss';
+import BlogImg from '@/components/BlogImg';
 
 type post = {
   title: string;
@@ -45,9 +46,17 @@ export default function Posts() {
                   <p>{createdAt}</p>
                 </header>
 
-                <h1>{title}</h1>
+                <div className={styles.body}>
+                  <div className={styles.details}>
+                    <h1>{title}</h1>
 
-                <p>{description}</p>
+                    <p>{description}</p>
+                  </div>
+
+                  <div className={styles.imageWrapper}>
+                    <BlogImg name={`${url}-small`} />
+                  </div>
+                </div>
               </div>
             </div>
           </Link>

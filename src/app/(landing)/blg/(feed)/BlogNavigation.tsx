@@ -26,8 +26,8 @@ export default function BlogNavigation() {
         c<span>ode</span>
       </Link>
 
-      <Link style={selected === 'etc' ? SELECTED : {}} href='/blg?c=etc'>
-        e<span>tc</span>
+      <Link style={selected === 'misc' ? SELECTED : {}} href='/blg?c=misc'>
+        m<span>isc</span>
       </Link>
     </>
   );
