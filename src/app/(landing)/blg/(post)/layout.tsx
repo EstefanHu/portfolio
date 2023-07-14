@@ -32,7 +32,7 @@ export default function PostLayout({ children }: { children: React.ReactNode }) 
 
       <div className={styles.appendix}></div>
 
-      <div className={styles.more}>
+      {/* <div className={styles.more}>
         <div>
           {POSTS.map(({ title, url, imgName }) => {
             return (
@@ -45,7 +45,7 @@ export default function PostLayout({ children }: { children: React.ReactNode }) 
             );
           })}
         </div>
-      </div>
+      </div> */}
     </article>
   );
 }

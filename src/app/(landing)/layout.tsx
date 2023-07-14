@@ -57,7 +57,7 @@ export default function layout({ children }: { children: React.ReactNode }) {
                 <h4>blog</h4>
                 <Link href='/blg'>blog</Link>
                 <Link href='/blg?c=code'>code</Link>
-                <Link href='/blg?c=algo'>algorithm</Link>
+                <Link href='/blg?c=tech'>tech</Link>
                 <Link href='/blg?c=etc'>etc</Link>
               </span>
 
