@@ -5,7 +5,7 @@ export default function robots(): MetadataRoute.Robots {
     rules: {
       userAgent: '*',
       allow: '/',
-      disallow: ['/dsh', '/nbx', '/prfl', '/wrt'],
+      disallow: ['/dsh', '/nbx', '/prfl', '/wrt', '/wrt/*'],
     },
     sitemap: 'https://estefanhu.com/sitemap.xml',
   };
