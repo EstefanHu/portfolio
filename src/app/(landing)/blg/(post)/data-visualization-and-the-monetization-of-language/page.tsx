@@ -33,8 +33,10 @@ export default function page() {
         In an ideal world an organization would be able to select from an array of complete solutions that each target
         and solve for a particular problem. They would then be able to plug and play each tool into a seamless pipeline
         of business value that instantaneously provides feedback and results. Adopting new tools as they want and
-        dropping those that don&apos;t in a dynamic and meaningful manner.{' '}
+        dropping those that don&apos;t in a dynamic and meaningful manner.
       </p>
+
+      <p>The world, however, isn&apos;t so smooth. Every new solution introduces new complexities, technical hurdles, and functional dependencies that require substantial technical elbow grease to implement and maintain. And, even if you are so lucky (or skilled) to have selected the correct tool for the job, what if the product is buggy, or the creators of the product shut down, or, and possibly the most devastating, what if a new and better tool comes out? What do you do if, after dedicating hundreds if not thousands of implementation hours integrating and building upon the tool, you discover the desire or need to migrate tools? As I see it you have three options:</p>
 
       <p></p>
     </>
