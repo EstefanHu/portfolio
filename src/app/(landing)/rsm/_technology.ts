@@ -1,7 +1,7 @@
 const technology = [
   {
     category: 'languages',
-    items: ['C#', 'Go', 'Java', 'Javascript', 'Python', 'SQL', 'Typescript', 'HTMLS', 'CSS'],
+    items: ['C#', 'Go', 'Java', 'Javascript', 'Python', 'SQL', 'Typescript', 'HTML', 'CSS'],
   },
   {
     category: 'tools',
