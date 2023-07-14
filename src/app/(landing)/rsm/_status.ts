@@ -9,7 +9,7 @@ const status = [
   },
   {
     q: 'Where am I located',
-    a: "Seattle, but I'm open to relocation.",
+    a: 'The rainy and beautiful Seattle, Washington.',
   },
 ];
 

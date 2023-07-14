@@ -3,37 +3,37 @@ import { MetadataRoute } from 'next';
 export default function sitemap(): MetadataRoute.Sitemap {
   return [
     {
-      url: 'https://estefan.me',
+      url: 'https://estefanhu.com',
+      lastModified: new Date(),
+    },
+    {
+      url: 'https://estefanhu.com/rsm',
+      lastModified: new Date(),
+    },
+    {
+      url: 'https://estefanhu.com/lgn',
       lastModified: new Date(),
     },
     // blg pages
     {
-      url: 'https://estefan.me/blg',
+      url: 'https://estefanhu.com/blg',
       lastModified: new Date(),
     },
     {
-      url: 'https://estefan.me/blg/a-bit-about-me',
+      url: 'https://estefanhu.com/blg/data-visualization-and-the-monetization-of-language',
       lastModified: new Date(),
     },
     {
-      url: 'https://estefan.me/blg/how-i-track-ideas',
-      lastModified: new Date(),
-    },
-    {
-      url: 'https://estefan.me/blg/stay-mean-stay-lean',
-      lastModified: new Date(),
-    },
-    {
-      url: 'https://estefan.me/blg/what-the-crud',
+      url: 'https://estefanhu.com/blg/how-i-track-ideas',
       lastModified: new Date(),
     },
     // prjkt pages
     {
-      url: 'https://estefan.me/prjkt',
+      url: 'https://estefanhu.com/prjkt',
       lastModified: new Date(),
     },
     {
-      url: 'https://estefan.me/prjkt/logs',
+      url: 'https://estefanhu.com/prjkt/logs',
       lastModified: new Date(),
     },
   ];

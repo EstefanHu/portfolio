@@ -5,8 +5,8 @@ export default function robots(): MetadataRoute.Robots {
     rules: {
       userAgent: '*',
       allow: '/',
-      disallow: '/private/',
+      disallow: ['/dsh', '/nbx', '/prfl', '/wrt', '/wrt/*'],
     },
-    sitemap: 'https://estefan.me/sitemap.xml',
+    sitemap: 'https://estefanhu.com/sitemap.xml',
   };
 }

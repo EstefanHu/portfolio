@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import styles from './post.module.scss';
 import BlogImg from '@/components/BlogImg';
+import BreadCrumbs from './BreadCrumbs';
 
 const POSTS = [
   {
@@ -28,6 +29,10 @@ const POSTS = [
 export default function PostLayout({ children }: { children: React.ReactNode }) {
   return (
     <article className={styles.wrapper}>
+      <div className={styles.bread}>
+        <BreadCrumbs />
+      </div>
+
       <div className={styles.blog}>{children}</div>
 
       <div className={styles.appendix}></div>

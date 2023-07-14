@@ -58,14 +58,13 @@ export default function layout({ children }: { children: React.ReactNode }) {
                 <Link href='/blg'>blog</Link>
                 <Link href='/blg?c=code'>code</Link>
                 <Link href='/blg?c=tech'>tech</Link>
-                <Link href='/blg?c=etc'>etc</Link>
               </span>
 
-              <span>
+              {/* <span>
                 <h4>projects</h4>
                 <Link href='/prjkts'>projects</Link>
                 <Link href='/prjkts/logs'>dev logs</Link>
-              </span>
+              </span> */}
             </nav>
           </div>
 
