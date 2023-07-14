@@ -1,9 +1,8 @@
 import BlogNavigation from './BlogNavigation';
-import Post from './Post';
-import posts from './_posts';
+import Posts from './Posts';
 import styles from './feed.module.scss';
 
-export default function Posts() {
+export default function Page() {
   return (
     <div className={styles.wrapper}>
       <nav>
@@ -11,9 +10,7 @@ export default function Posts() {
       </nav>
 
       <div className={styles.feed}>
-        {posts.map((post: any) => (
-          <Post key={post.title} {...post} />
-        ))}
+        <Posts />
       </div>
     </div>
   );
