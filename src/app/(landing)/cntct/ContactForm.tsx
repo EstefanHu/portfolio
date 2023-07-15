@@ -3,6 +3,7 @@ import { useState } from 'react';
 import { useRouter, useSearchParams } from 'next/navigation';
 import Link from 'next/link';
 import Image from 'next/image';
+import { validateEmailAddress } from '@/lib/validateEmailAddress';
 import styles from './contact.module.scss';
 
 const DEFAULT_FIELDS = {
@@ -24,7 +25,15 @@ export default function ContactForm() {
 
     if (isLoading) return;
     setErrorData(DEFAULT_FIELDS);
-    const { name, email, message } = formData;
+    const { name, email, reason, message } = formData;
+    const errors = { ...DEFAULT_FIELDS };
+
+    // if (!name) errors.name = 'name is required';
+    // if (!email) errors.email = 'email address is required';
+    // if (!validateEmailAddress(email)) errors.email = 'invalid email address';
+    // if (!reason) errors.reason = 'reason is required';
+    // if (!message) errors.message = 'message is required';
+    // if (JSON.stringify(errors) !== JSON.stringify(DEFAULT_FIELDS)) return setErrorData(errors);
 
     setIsLoading(true);
 
@@ -32,6 +41,8 @@ export default function ContactForm() {
 
     router.push('/cntct?s=success');
   };
+
+  if (isLoading) return;
 
   if (searchParams.get('s') === 'success') return <SuccessView />;
 
@@ -69,6 +80,7 @@ export default function ContactForm() {
           value={formData.message}
           onChange={(e) => setFormData({ ...formData, message: e.target.value })}
         />
+        <p>{errorData.message}</p>
       </fieldset>
 
       <input type='submit' className='hidden' />
@@ -86,13 +98,13 @@ const SuccessView = () => (
 
     <p>
       Your contact form has been submitted successfully. I&apos;ve been notified and will get back to you in a day or
-      two. In the meantime, checkout this duck.
+      two. In the meantime, check this guy out.
     </p>
 
     <div className={styles.imageWrapper}>
       <Image src='/gifs/contact_success.gif' alt='duck' fill />
     </div>
 
-    <Link href='/'>Back to Site</Link>
+    <Link href='/'>leave him behind</Link>
   </div>
 );
