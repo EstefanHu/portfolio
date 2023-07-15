@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import { cookies } from 'next/headers';
-import { FaGithubSquare, FaLinkedin } from 'react-icons/fa';
+import { FaGithubSquare, FaLinkedin, FaTwitterSquare } from 'react-icons/fa';
 
 import Logo from '@/components/Logo';
 import PageLinks from './PageLinks';
@@ -50,6 +50,7 @@ export default function layout({ children }: { children: React.ReactNode }) {
                 <h4>me</h4>
                 <Link href='/'>about</Link>
                 <Link href='/rsm'>resume</Link>
+                <Link href='/cntct'>contact</Link>
                 <Link href='/lgn'>login</Link>
               </span>
 
@@ -76,6 +77,10 @@ export default function layout({ children }: { children: React.ReactNode }) {
 
               <Link target='_blank' rel='noopener noreferrer' href='https://github.com/estefanhu/'>
                 <FaGithubSquare />
+              </Link>
+
+              <Link target='_blank' rel='noopener noreferrer' href='https://twitter.com/_estefanhu/'>
+                <FaTwitterSquare />
               </Link>
             </span>
 
