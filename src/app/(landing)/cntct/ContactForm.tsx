@@ -1,8 +1,9 @@
 'use client';
 import { useState } from 'react';
 import { useRouter, useSearchParams } from 'next/navigation';
-import styles from './contact.module.scss';
 import Link from 'next/link';
+import Image from 'next/image';
+import styles from './contact.module.scss';
 
 const DEFAULT_FIELDS = {
   name: '',
@@ -82,6 +83,16 @@ export default function ContactForm() {
 const SuccessView = () => (
   <div className={styles.success}>
     <h1>Success.</h1>
-    <Link href='/'>Back to site</Link>
+
+    <p>
+      Your contact form has been submitted successfully. I&apos;ve been notified and will get back to you in a day or
+      two. In the meantime, checkout this duck.
+    </p>
+
+    <div className={styles.imageWrapper}>
+      <Image src='/gifs/contact_success.gif' alt='duck' fill />
+    </div>
+
+    <Link href='/'>Back to Site</Link>
   </div>
 );
