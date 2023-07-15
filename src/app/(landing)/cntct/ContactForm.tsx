@@ -1,17 +1,19 @@
 'use client';
 import { useState } from 'react';
-import { useRouter } from 'next/navigation';
+import { useRouter, useSearchParams } from 'next/navigation';
+import styles from './contact.module.scss';
+import Link from 'next/link';
 
 const DEFAULT_FIELDS = {
   name: '',
   email: '',
-  reason: 'contact',
+  reason: '',
   message: '',
-  origin: 'cntct',
 };
 
 export default function ContactForm() {
   const router = useRouter();
+  const searchParams = useSearchParams()!;
   const [isLoading, setIsLoading] = useState(false);
   const [formData, setFormData] = useState(DEFAULT_FIELDS);
   const [errorData, setErrorData] = useState(DEFAULT_FIELDS);
@@ -27,11 +29,15 @@ export default function ContactForm() {
 
     setIsLoading(false);
 
-    router.push('/cntct/sccss');
+    router.push('/cntct?s=success');
   };
+
+  if (searchParams.get('s') === 'success') return <SuccessView />;
 
   return (
     <form noValidate autoComplete='on' onSubmit={handleSubmit}>
+      <h1>Contact.</h1>
+
       <fieldset>
         <input
           type='text'
@@ -39,12 +45,28 @@ export default function ContactForm() {
           value={formData.name}
           onChange={(e) => setFormData({ ...formData, name: e.target.value })}
         />
+        <p>{errorData.name}</p>
 
         <input
           type='email'
           placeholder='Email Address'
           value={formData.email}
           onChange={(e) => setFormData({ ...formData, email: e.target.value })}
+        />
+        <p>{errorData.email}</p>
+
+        <input
+          type='text'
+          placeholder='Reason for Contact'
+          value={formData.reason}
+          onChange={(e) => setFormData({ ...formData, reason: e.target.value })}
+        />
+        <p>{errorData.reason}</p>
+
+        <textarea
+          placeholder='Message'
+          value={formData.message}
+          onChange={(e) => setFormData({ ...formData, message: e.target.value })}
         />
       </fieldset>
 
@@ -56,3 +78,10 @@ export default function ContactForm() {
     </form>
   );
 }
+
+const SuccessView = () => (
+  <div className={styles.success}>
+    <h1>Success.</h1>
+    <Link href='/'>Back to site</Link>
+  </div>
+);
