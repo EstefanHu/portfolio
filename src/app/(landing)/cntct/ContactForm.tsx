@@ -43,7 +43,7 @@ export default function ContactForm() {
           Accept: 'application/json',
           'Content-Type': 'application/json',
         },
-        body: JSON.stringify(formData)
+        body: JSON.stringify(formData),
       })
     ).json();
     setIsLoading(false);
@@ -108,7 +108,7 @@ const FailView = () => (
 
     <Link href='/'>back to site</Link>
   </div>
-)
+);
 
 const SuccessView = () => (
   <div className={styles.view}>
