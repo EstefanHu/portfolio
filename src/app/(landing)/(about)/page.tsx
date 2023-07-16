@@ -37,8 +37,16 @@ export default function Home() {
         </p>
 
         <p>
-          So what am I working on right now? Who knows! But you can check out my <Link href='/blg'>blog</Link> to see
-          what I&apos;m writing about.
+          So what am I working on right now? Who knows! But you can browse my <Link href='/blg'>blog</Link> to see what
+          I&apos;m writing about, follow my{' '}
+          <Link target='_blank' rel='noopener noreferrer' href='https://twitter.com/_estefanhu'>
+            Twitter
+          </Link>{' '}
+          to see what I&apos;m thinking about, or check out my{' '}
+          <Link target='_blank' rel='noopener noreferrer' href='https://github.com/estefanhu/'>
+            Github
+          </Link>{' '}
+          to see what I&apos;m committing to.
         </p>
 
         <p>
@@ -46,7 +54,7 @@ export default function Home() {
           <Link target='_blank' rel='noopener noreferrer' href='https://www.linkedin.com/in/estefanhu/'>
             LinkedIn
           </Link>
-          .
+          , or send me a message <Link href='/cntct'>here</Link>.
         </p>
 
         <p>Best of wishes, and to those who know, happy coding!</p>

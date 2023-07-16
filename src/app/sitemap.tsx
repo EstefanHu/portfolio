@@ -14,6 +14,10 @@ export default function sitemap(): MetadataRoute.Sitemap {
       url: 'https://estefanhu.com/lgn',
       lastModified: new Date(),
     },
+    {
+      url: 'https://estefanhu.com/cntct',
+      lastModified: new Date(),
+    },
     // blg pages
     {
       url: 'https://estefanhu.com/blg',
