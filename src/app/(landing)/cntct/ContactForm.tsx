@@ -20,7 +20,7 @@ export default function ContactForm() {
   const [formData, setFormData] = useState(DEFAULT_FIELDS);
   const [errorData, setErrorData] = useState(DEFAULT_FIELDS);
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
 
     if (isLoading) return;
@@ -28,22 +28,30 @@ export default function ContactForm() {
     const { name, email, reason, message } = formData;
     const errors = { ...DEFAULT_FIELDS };
 
-    // if (!name) errors.name = 'name is required';
-    // if (!email) errors.email = 'email address is required';
-    // if (!validateEmailAddress(email)) errors.email = 'invalid email address';
-    // if (!reason) errors.reason = 'reason is required';
-    // if (!message) errors.message = 'message is required';
-    // if (JSON.stringify(errors) !== JSON.stringify(DEFAULT_FIELDS)) return setErrorData(errors);
+    if (!name) errors.name = 'name is required';
+    if (!email) errors.email = 'email address is required';
+    if (!validateEmailAddress(email)) errors.email = 'invalid email address';
+    if (!reason) errors.reason = 'reason is required';
+    if (!message) errors.message = 'message is required';
+    if (JSON.stringify(errors) !== JSON.stringify(DEFAULT_FIELDS)) return setErrorData(errors);
 
     setIsLoading(true);
-
+    const { code } = await (
+      await fetch('/api/contact', {
+        method: 'POST',
+        headers: {
+          Accept: 'application/json',
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData)
+      })
+    ).json();
     setIsLoading(false);
 
-    router.push('/cntct?s=success');
+    router.replace(`/cntct?s=${code === 200 ? 'success' : 'fail'}`);
   };
 
-  if (isLoading) return;
-
+  if (searchParams.get('s') === 'fail') return <FailView />;
   if (searchParams.get('s') === 'success') return <SuccessView />;
 
   return (
@@ -92,8 +100,18 @@ export default function ContactForm() {
   );
 }
 
+const FailView = () => (
+  <div className={styles.view}>
+    <h1>Whoops.</h1>
+
+    <p>Looks like something went wrong on our end, we have been notified and will fix it as soon as possible.</p>
+
+    <Link href='/'>back to site</Link>
+  </div>
+)
+
 const SuccessView = () => (
-  <div className={styles.success}>
+  <div className={styles.view}>
     <h1>Success.</h1>
 
     <p>
