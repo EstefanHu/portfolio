@@ -36,7 +36,7 @@ export default function Home() {
           is why I just can&apos;t stop coding.
         </p>
 
-        <p>
+        {/* <p>
           So what am I working on right now? Who knows! But you can browse my <Link href='/blg'>blog</Link> to see what
           I&apos;m writing about, follow my{' '}
           <Link target='_blank' rel='noopener noreferrer' href='https://twitter.com/_estefanhu'>
@@ -47,7 +47,7 @@ export default function Home() {
             Github
           </Link>{' '}
           to see what I&apos;m committing to.
-        </p>
+        </p> */}
 
         <p>
           If you would like to reach me, you can find me on{' '}
