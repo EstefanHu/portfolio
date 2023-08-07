@@ -133,9 +133,9 @@ export default function Resume() {
               <div key={location} className={styles.learn}>
                 <h4>{location}</h4>
 
-                {certs.map((cert) => (
+                {/* {certs.map((cert) => (
                   <p key={cert}>{cert}</p>
-                ))}
+                ))} */}
               </div>
             ))}
           </section>
