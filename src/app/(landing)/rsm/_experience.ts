@@ -1,5 +1,14 @@
 const experience = [
   {
+    name: 'open seattle',
+    title: 'software engineer',
+    location: 'seattle, wa',
+    startDate: 'aug 2023',
+    endDate: 'present',
+    headliner: 'Architecting and leading developement of open source solutions for non-profits in Seattle',
+    achievements: [],
+  },
+  {
     name: 'goodway group',
     title: 'fullstack developer',
     location: 'seattle, wa - remote',
