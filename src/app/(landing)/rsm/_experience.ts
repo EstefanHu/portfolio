@@ -1,12 +1,12 @@
 const experience = [
   {
-    name: 'open seattle',
-    title: 'software engineer',
+    name: 'amazon',
+    title: 'software development engineer II',
     location: 'seattle, wa',
-    startDate: 'aug 2023',
+    startDate: 'sep 2023',
     endDate: 'present',
-    headliner: 'Architecting and leading developement of open source solutions for non-profits in Seattle',
-    achievements: [],
+    headliner: 'Spearheaded development on business critical services that impacts over 2,000,000,000 users annually.',
+    achievements: []
   },
   {
     name: 'goodway group',

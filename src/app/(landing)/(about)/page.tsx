@@ -24,7 +24,7 @@ export default function Home() {
           <Link target='_blank' rel='noopener noreferrer' href='https://www.linkedin.com/in/estefanhu/'>
             Estefan
           </Link>{' '}
-          and I am a software developer @ <Link href='/rsm'>[insert company]</Link>.
+          and I am a software developer @ <Link href='/rsm'>Amazon</Link>.
         </p>
 
         <p>

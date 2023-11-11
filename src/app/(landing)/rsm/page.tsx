@@ -10,7 +10,7 @@ const NAV_LINKS = [
   { primary: 'status' },
   {
     primary: 'experience',
-    links: ['goodway group', 'realty simple', 'muse'],
+    links: ['amazon', 'goodway group', 'realty simple', 'muse'],
   },
   { primary: 'technology' },
   { primary: 'skills' },
@@ -64,12 +64,11 @@ export default function Resume() {
         <div className={styles.resume}>
           <section id='status' className={styles.status}>
             <h3>
-              status <span>open for hire</span>
+              status <span>employed</span>
             </h3>
 
             <p>
-              I&apos;m unemployed! Having been affected by the recent tech layoffs I&apos;ve decided to take some time,
-              build some projects and learn a few technologies that I&apos;ve had queued up for some time now.
+              After a short break from corporate development I&apos;m back at it at Amazon. On my down time however I am building video games, if you're about that hmu!
             </p>
 
             {status.map(({ q, a }) => (
