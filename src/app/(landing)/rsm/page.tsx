@@ -68,7 +68,8 @@ export default function Resume() {
             </h3>
 
             <p>
-              After a short break from corporate development I&apos;m back at it at Amazon. On my down time however I am building video games, if you're about that hmu!
+              After a short break from corporate development I&apos;m back at it at Amazon. On my down time however I am
+              building video games, if you&apos;re about that hmu!
             </p>
 
             {status.map(({ q, a }) => (

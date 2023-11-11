@@ -6,7 +6,7 @@ const experience = [
     startDate: 'sep 2023',
     endDate: 'present',
     headliner: 'Spearheaded development on business critical services that impacts over 2,000,000,000 users annually.',
-    achievements: []
+    achievements: [],
   },
   {
     name: 'goodway group',
